@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Reset password testcase with valid data is passed]]>
+    </line>
+    <line>
+      <![CDATA[RowCount=3]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login verification testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login verification testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login verification testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[The TestCase is passed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="63769" started-at="2019-11-01T16:37:56 IST" finished-at="2019-11-01T16:39:00 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="63769" started-at="2019-11-01T16:37:56 IST" finished-at="2019-11-01T16:39:00 IST">
+      <class name="com.dreamorbit.scripts.TestResetPasswordValid">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestResetPasswordValid@6e6c3152]" name="launchAPP" is-config="true" duration-ms="8254" started-at="2019-11-01T16:37:56 IST" finished-at="2019-11-01T16:38:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="rstpwdVerification()[pri:1, instance:com.dreamorbit.scripts.TestResetPasswordValid@6e6c3152]" name="rstpwdVerification" duration-ms="14518" started-at="2019-11-01T16:38:04 IST" finished-at="2019-11-01T16:38:19 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Reset password testcase with valid data is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- rstpwdVerification -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestResetPasswordValid@6e6c3152]" name="closeApp" is-config="true" duration-ms="629" started-at="2019-11-01T16:38:19 IST" finished-at="2019-11-01T16:38:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.dreamorbit.scripts.TestResetPasswordValid -->
+      <class name="com.dreamorbit.scripts.TestValidLogin">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestValidLogin@6ebc05a6]" name="launchAPP" is-config="true" duration-ms="7372" started-at="2019-11-01T16:38:49 IST" finished-at="2019-11-01T16:38:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="testValidlogin()[pri:3, instance:com.dreamorbit.scripts.TestValidLogin@6ebc05a6]" name="testValidlogin" duration-ms="2587" started-at="2019-11-01T16:38:56 IST" finished-at="2019-11-01T16:38:59 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[The TestCase is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidlogin -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestValidLogin@6ebc05a6]" name="closeApp" is-config="true" duration-ms="666" started-at="2019-11-01T16:38:59 IST" finished-at="2019-11-01T16:39:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.dreamorbit.scripts.TestValidLogin -->
+      <class name="com.dreamorbit.scripts.TestInvalidLogin">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestInvalidLogin@1dfe2924]" name="launchAPP" is-config="true" duration-ms="7727" started-at="2019-11-01T16:38:19 IST" finished-at="2019-11-01T16:38:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="testInvalidlogin()[pri:2, instance:com.dreamorbit.scripts.TestInvalidLogin@1dfe2924]" name="testInvalidlogin" duration-ms="21312" started-at="2019-11-01T16:38:27 IST" finished-at="2019-11-01T16:38:48 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[RowCount=3]]>
+            </line>
+            <line>
+              <![CDATA[Invalid login verification testcase is passed]]>
+            </line>
+            <line>
+              <![CDATA[Invalid login verification testcase is passed]]>
+            </line>
+            <line>
+              <![CDATA[Invalid login verification testcase is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidlogin -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestInvalidLogin@1dfe2924]" name="closeApp" is-config="true" duration-ms="657" started-at="2019-11-01T16:38:48 IST" finished-at="2019-11-01T16:38:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.dreamorbit.scripts.TestInvalidLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

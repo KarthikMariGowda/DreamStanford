@@ -1,6 +1,5 @@
 package com.dreamorbit.pages;
 
-	
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.FindBy;
@@ -8,7 +7,7 @@ package com.dreamorbit.pages;
 
 	public class ResetPasswordPage
 	{
-		
+
 		@FindBy(xpath= "//img[@title='Change Password']")// Declaration
 		private WebElement restPasswordButton;
 		
