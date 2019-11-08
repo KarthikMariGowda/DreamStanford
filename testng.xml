@@ -4,8 +4,9 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.dreamorbit.scripts.TestInvalidLogin"/>
+      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkey"/>
+      <class name="com.dreamorbit.scripts.JsonDownloadValidSkey"/>
       <class name="com.dreamorbit.scripts.TestValidLogin"/>
-      <class name="com.dreamorbit.scripts.JsonDownloadCheck"/>
       <class name="com.dreamorbit.scripts.TestResetPasswordValid"/>
     </classes>
   </test> <!-- Test -->

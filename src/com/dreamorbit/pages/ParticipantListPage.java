@@ -26,6 +26,9 @@ import org.openqa.selenium.WebDriver;
 		@FindBy(xpath="//button[.='Cancel']")
 		WebElement button_sKeycancel;
 		
+		@FindBy(xpath="//div[.='Invalid key']")
+		private WebElement warningMessInvalidKey;
+		
 		@FindBy(xpath="//i[@class='fa fa-angle-down']")
 		private WebElement button_downArrow;
 		
@@ -55,7 +58,7 @@ import org.openqa.selenium.WebDriver;
 			textField_sKey.sendKeys(key);
 		}
 		
-		public void clearSymmetricKey(String key)
+		public void clearSymmetricKey()
 		{
 			textField_sKey.clear();
 		}
@@ -69,8 +72,14 @@ import org.openqa.selenium.WebDriver;
 		{
 		button_sKeyOk.click();
 		}
+		
 		public void sK_click_Cancel()
 		{
 		button_sKeyOk.click();
 	}
+		public boolean sk_warning_isDisplayed()
+		{
+			boolean res=warningMessInvalidKey.isDisplayed();
+			return res ;
+		}
 }

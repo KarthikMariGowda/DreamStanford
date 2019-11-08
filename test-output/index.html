@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.dreamorbit.scripts.TestResetPasswordValid" hash-for-method="rstpwdVerification">rstpwdVerification</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.dreamorbit.scripts.TestInvalidLogin" hash-for-method="testInvalidlogin">testInvalidlogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.dreamorbit.scripts.TestValidLogin" hash-for-method="testValidlogin">testValidlogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.dreamorbit.scripts.JsonDownloadInvalidSkey" hash-for-method="jsonDownloadIncorrectSkey">jsonDownloadIncorrectSkey</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,44 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.dreamorbit.scripts.TestValidLogin</span>
+              <span class="class-name">com.dreamorbit.scripts.JsonDownloadInvalidSkey</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testValidlogin">
-                  </a> <!-- testValidlogin -->
-                  <span class="method-name">testValidlogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dreamorbit.scripts.TestInvalidLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidlogin">
-                  </a> <!-- testInvalidlogin -->
-                  <span class="method-name">testInvalidlogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dreamorbit.scripts.TestResetPasswordValid</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="rstpwdVerification">
-                  </a> <!-- rstpwdVerification -->
-                  <span class="method-name">rstpwdVerification</span>
+                  <a name="jsonDownloadIncorrectSkey">
+                  </a> <!-- jsonDownloadIncorrectSkey -->
+                  <span class="method-name">jsonDownloadIncorrectSkey</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,8 +145,9 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.dreamorbit.scripts.TestInvalidLogin&quot;/&gt;
+      &lt;class name=&quot;com.dreamorbit.scripts.JsonDownloadInvalidSkey&quot;/&gt;
+      &lt;class name=&quot;com.dreamorbit.scripts.JsonDownloadValidSkey&quot;/&gt;
       &lt;class name=&quot;com.dreamorbit.scripts.TestValidLogin&quot;/&gt;
-      &lt;class name=&quot;com.dreamorbit.scripts.JsonDownloadCheck&quot;/&gt;
       &lt;class name=&quot;com.dreamorbit.scripts.TestResetPasswordValid&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -201,7 +162,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,24 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInvalidlogin')
-data.setCell(0, 2, 'com.dreamorbit.scripts.TestInvalidLogin')
-data.setCell(0, 3, 21312);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'rstpwdVerification')
-data.setCell(1, 2, 'com.dreamorbit.scripts.TestResetPasswordValid')
-data.setCell(1, 3, 14518);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testValidlogin')
-data.setCell(2, 2, 'com.dreamorbit.scripts.TestValidLogin')
-data.setCell(2, 3, 2587);
+data.setCell(0, 1, 'jsonDownloadIncorrectSkey')
+data.setCell(0, 2, 'com.dreamorbit.scripts.JsonDownloadInvalidSkey')
+data.setCell(0, 3, 28691);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -256,37 +209,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">rstpwdVerification</span>
+              <span class="reporter-method-name">jsonDownloadIncorrectSkey</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Reset password testcase with valid data is passed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testValidlogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">The TestCase is passed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testInvalidlogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">RowCount=3</span>
-                <span class="reporter-method-output">Invalid login verification testcase is passed</span>
-                <span class="reporter-method-output">Invalid login verification testcase is passed</span>
-                <span class="reporter-method-output">Invalid login verification testcase is passed</span>
+                <span class="reporter-method-output">invalidkey input counts =3</span>
+                <span class="reporter-method-output">Invalid key</span>
+                <span class="reporter-method-output">Json Download testcase with incorrect symmetric key is passed</span>
+                <span class="reporter-method-output">Invalid key</span>
+                <span class="reporter-method-output">Json Download testcase with incorrect symmetric key is passed</span>
+                <span class="reporter-method-output">Invalid key</span>
+                <span class="reporter-method-output">Json Download testcase with incorrect symmetric key is passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.dreamorbit.scripts.JsonDownloadCheck</span>
+              <span class="ignored-class-name">com.dreamorbit.scripts.TestResetPasswordValid</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">rstpwdVerification</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dreamorbit.scripts.JsonDownloadInvalidSkey</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">jsonDownloadInvalidSkey</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dreamorbit.scripts.TestInvalidLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testInvalidlogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dreamorbit.scripts.JsonDownloadValidSkey</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">jsonDownloadCheck</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dreamorbit.scripts.TestValidLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testValidlogin</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -298,48 +270,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.dreamorbit.scripts.TestResetPasswordValid</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.dreamorbit.scripts.JsonDownloadInvalidSkey</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchAPP</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">rstpwdVerification</span>
-                <span class="method-start">8255 ms</span>
+                <span class="method-name">jsonDownloadIncorrectSkey</span>
+                <span class="method-start">7665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">22775 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dreamorbit.scripts.TestInvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchAPP</span>
-                <span class="method-start">23411 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testInvalidlogin</span>
-                <span class="method-start">31138 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp</span>
-                <span class="method-start">52453 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dreamorbit.scripts.TestValidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchAPP</span>
-                <span class="method-start">53110 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testValidlogin</span>
-                <span class="method-start">60482 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp</span>
-                <span class="method-start">63070 ms</span>
+                <span class="method-start">36359 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

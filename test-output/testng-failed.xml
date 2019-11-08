@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dreamorbit.scripts.TestResetPasswordValid">
+      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkey">
         <methods>
-          <include name="rstpwdVerification"/>
+          <include name="jsonDownloadIncorrectSkey"/>
           <include name="closeApp"/>
           <include name="launchAPP"/>
         </methods>
-      </class> <!-- com.dreamorbit.scripts.TestResetPasswordValid -->
+      </class> <!-- com.dreamorbit.scripts.JsonDownloadInvalidSkey -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

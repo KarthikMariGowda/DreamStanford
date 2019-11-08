@@ -26,7 +26,7 @@ public abstract class FWUtils implements IAutoConstant
 		
 		try {
 			AssertJUnit.assertEquals(aURL, eURL);
-			Reporter.log("The TestCase is passed");
+			Reporter.log("Login testcase with valid data is passed");
 		} 
 		catch (AssertionError e) {
 			Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed");
