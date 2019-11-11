@@ -23,7 +23,6 @@ public abstract class FWUtils implements IAutoConstant
 		wait.until(ExpectedConditions.urlToBe(eURL));
 		String aURL=driver.getCurrentUrl();
 		System.out.println("Actual URL of the Page is :"+aURL);
-		
 		return aURL;
 		
 	}

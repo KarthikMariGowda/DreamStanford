@@ -8,14 +8,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
+import com.dreamorbit.main.NavigationDrawerPage;
 import com.dreamorbit.pages.LoginPage;
 import com.dreamorbit.pages.ResearcherPage;
 import com.dreamorbit.pages.StudiesPage;
+import com.dreamorbit.pages.SymmetricKeyPage;
 
-public class Commons implements IAutoConstant {
+public class Commons implements IAutoConstant 
+
+{
 	BaseTest baseTest = new BaseTest();
 
-	public String getToastMSG(WebDriver driver) throws InterruptedException {
+	public String getToastMSG(WebDriver driver) throws InterruptedException 
+	{
 		WebElement toastBOX = driver.findElement(By.className("toast-message"));
 		WebDriverWait ewait = new WebDriverWait(driver, 10);
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
@@ -46,20 +51,11 @@ public class Commons implements IAutoConstant {
 	public void toastwait(WebDriver driver) {
 
 		WebDriverWait ewait = new WebDriverWait(driver, 10);
-		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.className("toast-message")));
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
 
 	}
 
-	public void login(WebDriver driver) {
-		LoginPage loginPage = new LoginPage(driver);
-		String un = baseTest.read_XL_Data(XL_DATA_PATH, "ValidLoginData", 1, 0);
-		String pwd = baseTest.read_XL_Data(XL_DATA_PATH, "ValidLoginData", 1, 1);
-
-		loginPage.setUN(un);
-		loginPage.setPWD(pwd);
-		loginPage.clickLogin();
-	}
-
+	
 	public void studiesScreenWait(WebDriver driver)
 	{
 		
@@ -73,4 +69,53 @@ public class Commons implements IAutoConstant {
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='insert-more']")));
 	}
+	
+	public void login(WebDriver driver)
+	{
+		LoginPage loginPage = new LoginPage(driver);
+		String un = baseTest.read_XL_Data(XL_DATA_PATH, "ValidLoginData", 1, 0);
+		String pwd = baseTest.read_XL_Data(XL_DATA_PATH, "ValidLoginData", 1, 1);
+
+		loginPage.setUN(un);
+		loginPage.setPWD(pwd);
+		loginPage.clickLogin();
+	}
+	
+	public void addResearcher(WebDriver driver) throws InterruptedException 
+	{
+		Commons commons = new Commons();
+		ResearcherPage researcherPage = new ResearcherPage(driver);
+		NavigationDrawerPage navigationDrawerPage = new NavigationDrawerPage(driver);
+		BaseTest baseTest = new BaseTest();
+		SymmetricKeyPage symmetricKeyPage= new SymmetricKeyPage(driver);
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		
+		commons.login(driver);
+		commons.studiesScreenWait(driver);
+		navigationDrawerPage.nDResearchersClick();
+		Thread.sleep(4000);
+		
+		int rowCount = baseTest.xl_RowCount(XL_DATA_PATH, "ValidResearcherEmails");
+		Reporter.log("RowCount=" + rowCount, true);
+
+		for (int i = 1; i <= rowCount; i++)
+		{
+			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
+			
+			commons.researchersScreenWait(driver);
+
+			researcherPage.addResearcherClick();
+			ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@src='assets/images/ic_save.png']")));
+			
+			String vEmailid = baseTest.read_XL_Data(XL_DATA_PATH, "ValidResearcherEmails", i, 0);
+			researcherPage.setEmailAddress(vEmailid);
+			researcherPage.tickButtonClick();
+			
+			ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id("swalSymmetricKey")));
+			symmetricKeyPage.sendSymmetricKey(sKey);
+			symmetricKeyPage.sK_clickOk();
+			Thread.sleep(5000);
+
+	}
+}
 }
