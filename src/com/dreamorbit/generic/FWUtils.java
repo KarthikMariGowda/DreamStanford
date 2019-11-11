@@ -17,21 +17,14 @@ import org.testng.Reporter;
 public abstract class FWUtils implements IAutoConstant
 {
 	
-	public static void verifyPage(WebDriver driver,String eURL)
+	public static String getCurrentPageUrl(WebDriver driver,String eURL)
 	{
 		WebDriverWait wait=new WebDriverWait(driver,ETO);
 		wait.until(ExpectedConditions.urlToBe(eURL));
 		String aURL=driver.getCurrentUrl();
 		System.out.println("Actual URL of the Page is :"+aURL);
 		
-		try {
-			AssertJUnit.assertEquals(aURL, eURL);
-			Reporter.log("Login testcase with valid data is passed");
-		} 
-		catch (AssertionError e) {
-			Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed");
-			AssertJUnit.fail();
-		}
+		return aURL;
 		
 	}
 	

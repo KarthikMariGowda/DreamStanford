@@ -10,10 +10,13 @@
   @FindBy(xpath="//a[.='Personal']/ancestor::div[2]//div[2]/div[2]//img[@class='img-responsive eye-icon']")// Declaration private WebElement fileJson;
   private WebElement fileJson;
   
+  
+  
   public ParticipantPage(WebDriver driver)//Initialization to handle stale element exception
 	{
 		PageFactory.initElements(driver,this);
 	}
+  
   
   public void fileJsonClick()
   { 

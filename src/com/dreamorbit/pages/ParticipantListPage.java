@@ -14,20 +14,6 @@ import org.openqa.selenium.WebDriver;
 		@FindBy(xpath= "button[.='Decrypt']")
 		private WebElement button_Decrypt;
 		
-		@FindBy(id= "swalSymmetricKey")
-		private WebElement textField_sKey;
-		
-		@FindBy(id="isSave")
-		private WebElement checkBox_saveSession;
-		
-		@FindBy(xpath= "//button[.='OK']")
-		private WebElement button_sKeyOk;
-		
-		@FindBy(xpath="//button[.='Cancel']")
-		WebElement button_sKeycancel;
-		
-		@FindBy(xpath="//div[.='Invalid key']")
-		private WebElement warningMessInvalidKey;
 		
 		@FindBy(xpath="//i[@class='fa fa-angle-down']")
 		private WebElement button_downArrow;
@@ -53,33 +39,10 @@ import org.openqa.selenium.WebDriver;
 			button_Decrypt.click();
 		}
 		
-		public void sendSymmetricKey(String key)
-		{
-			textField_sKey.sendKeys(key);
-		}
-		
-		public void clearSymmetricKey()
-		{
-			textField_sKey.clear();
-		}
 		
 		public void downArrowClick()
 		{
 			button_downArrow.click();
 		}
 
-		public void sK_clickOk()
-		{
-		button_sKeyOk.click();
 		}
-		
-		public void sK_click_Cancel()
-		{
-		button_sKeyOk.click();
-	}
-		public boolean sk_warning_isDisplayed()
-		{
-			boolean res=warningMessInvalidKey.isDisplayed();
-			return res ;
-		}
-}

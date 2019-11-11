@@ -1,14 +1,9 @@
 package com.dreamorbit.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.Reporter;
 
 public class LoginPage 
 {
@@ -21,13 +16,11 @@ public class LoginPage
 	@FindBy(xpath= "//button[.='Login']")
 	private WebElement lgnBTN;
 	
-	/*
-	 * @FindBy(className="toast-message")
-	 * //driver.findElement(By.className("toast-message")) private WebElement
-	 * WarningMSG;
-	 */
-
+	@FindBy(xpath="//a[.=\"Forgot Password?\"]")
+	private WebElement forgotPwd;
 	
+	
+
 	
 	public LoginPage(WebDriver driver)//Initialization to handle stale element exception
 	{
@@ -60,7 +53,10 @@ public class LoginPage
 		lgnBTN.click();
 	}
 	
-	
+	public void clickForgotPwd()
+	{
+		forgotPwd.click();
+	}
 	
 
 }

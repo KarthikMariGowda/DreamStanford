@@ -1,67 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="14" total="15" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[invalidkey input counts =3]]>
+      <![CDATA[TotalParticipant Navigation Check testcase is passed]]>
     </line>
     <line>
-      <![CDATA[Invalid key]]>
-    </line>
-    <line>
-      <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
-    </line>
-    <line>
-      <![CDATA[Invalid key]]>
-    </line>
-    <line>
-      <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
-    </line>
-    <line>
-      <![CDATA[Invalid key]]>
-    </line>
-    <line>
-      <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
+      <![CDATA[TotalResearcher Navigation Check testcase is passed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="37006" started-at="2019-11-08T18:24:33 IST" finished-at="2019-11-08T18:25:10 IST">
+  <suite name="Suite" duration-ms="38929" started-at="2019-11-10T18:35:01Z" finished-at="2019-11-10T18:35:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="37006" started-at="2019-11-08T18:24:33 IST" finished-at="2019-11-08T18:25:10 IST">
-      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkey">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@6ebc05a6]" name="launchAPP" is-config="true" duration-ms="7664" started-at="2019-11-08T18:24:33 IST" finished-at="2019-11-08T18:24:41 IST">
+    <test name="Test" duration-ms="38929" started-at="2019-11-10T18:35:01Z" finished-at="2019-11-10T18:35:40Z">
+      <class name="com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck@1bce4f0a]" name="launchAPP" is-config="true" duration-ms="17066" started-at="2019-11-10T18:35:01Z" finished-at="2019-11-10T18:35:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="jsonDownloadIncorrectSkey()[pri:6, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@6ebc05a6]" name="jsonDownloadIncorrectSkey" duration-ms="28691" started-at="2019-11-08T18:24:41 IST" finished-at="2019-11-08T18:25:10 IST">
+        <test-method status="PASS" signature="totalParticipantNavigationCheck()[pri:14, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck@1bce4f0a]" name="totalParticipantNavigationCheck" duration-ms="21117" started-at="2019-11-10T18:35:19Z" finished-at="2019-11-10T18:35:40Z">
           <reporter-output>
             <line>
-              <![CDATA[invalidkey input counts =3]]>
+              <![CDATA[TotalParticipant Navigation Check testcase is passed]]>
             </line>
             <line>
-              <![CDATA[Invalid key]]>
-            </line>
-            <line>
-              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
-            </line>
-            <line>
-              <![CDATA[Invalid key]]>
-            </line>
-            <line>
-              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
-            </line>
-            <line>
-              <![CDATA[Invalid key]]>
-            </line>
-            <line>
-              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
+              <![CDATA[TotalResearcher Navigation Check testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- jsonDownloadIncorrectSkey -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@6ebc05a6]" name="closeApp" is-config="true" duration-ms="611" started-at="2019-11-08T18:25:10 IST" finished-at="2019-11-08T18:25:10 IST">
+        </test-method> <!-- totalParticipantNavigationCheck -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck@1bce4f0a]" name="closeApp" is-config="true" duration-ms="721" started-at="2019-11-10T18:35:40Z" finished-at="2019-11-10T18:35:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.JsonDownloadInvalidSkey -->
+      </class> <!-- com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

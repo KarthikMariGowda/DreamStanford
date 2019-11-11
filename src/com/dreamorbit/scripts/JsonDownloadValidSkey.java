@@ -51,13 +51,28 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.Reporter;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
+
+import org.testng.AssertJUnit;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
 import com.dreamorbit.generic.BaseTest;
 import com.dreamorbit.generic.Commons;
 import com.dreamorbit.pages.ParticipantListPage;
 import com.dreamorbit.pages.ParticipantPage;
-import com.dreamorbit.pages.StudiesPage;
+import com.dreamorbit.pages.SymmetricKeyPage;
+import com.dreamorbit.pages.LabelPage;
 
 
 public class JsonDownloadValidSkey extends BaseTest
@@ -70,22 +85,24 @@ public class JsonDownloadValidSkey extends BaseTest
 		Commons commons= new Commons();
 		BaseTest baseTest= new BaseTest();
 		
-		StudiesPage studypage= new StudiesPage(driver);
+		LabelPage studypage= new LabelPage(driver);
 		ParticipantListPage participantListPage = new ParticipantListPage(driver);
 		ParticipantPage participantPage= new ParticipantPage(driver);
+		SymmetricKeyPage symmetricKeyPage= new SymmetricKeyPage(driver);
+		
 		String validSKEY = baseTest.read_XL_Data(XL_DATA_PATH,"SymmtricKeyValid",1,0);
 		
 			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			 commons.login(driver); 
-			 commons.studiesWait(driver);
+			 commons.studiesScreenWait(driver);
 			 Thread.sleep(3000); 
 			 studypage.particpantLabelClick();
 			 Thread.sleep(3000);
 			 participantListPage.clickUploads();
 			 Thread.sleep(2000); 
 			 participantPage.fileJsonClick();
-			 participantListPage.sendSymmetricKey(validSKEY);
-			 participantListPage.sK_clickOk(); 
+			 symmetricKeyPage.sendSymmetricKey(validSKEY);
+			 symmetricKeyPage.sK_clickOk(); 
 			 
 			 String actualDownlaodSuccessToast= commons.getToastMSG(driver);
 			 AssertJUnit.assertEquals(actualDownlaodSuccessToast, "File downloaded successfully");
