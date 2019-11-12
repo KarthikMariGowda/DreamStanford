@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dreamorbit.scripts.AddResearcherCheck">
+      <class name="com.dreamorbit.scripts.TestSearchResearcher">
         <methods>
+          <include name="searchResearcherValid"/>
           <include name="closeApp"/>
-          <include name="AddResearcherCheckValid"/>
           <include name="launchAPP"/>
         </methods>
-      </class> <!-- com.dreamorbit.scripts.AddResearcherCheck -->
+      </class> <!-- com.dreamorbit.scripts.TestSearchResearcher -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

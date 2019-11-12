@@ -1,101 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="16" total="17" passed="0">
+<testng-results skipped="0" failed="0" ignored="16" total="18" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[RowCount=3]]>
+      <![CDATA[Researcher exact Search test case with existing data is passed]]>
+    </line>
+    <line>
+      <![CDATA[auto111]]>
+    </line>
+    <line>
+      <![CDATA[Researcher partial Search test case with existing data is passed]]>
+    </line>
+    <line>
+      <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
+    </line>
+    <line>
+      <![CDATA[No such Researcher as *****]]>
+    </line>
+    <line>
+      <![CDATA[Researcher Search testcase with  non existing data is passed]]>
+    </line>
+    <line>
+      <![CDATA[Functional verification of Participant link under Actions testcase is  passed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="24387" started-at="2019-11-11T17:23:50 IST" finished-at="2019-11-11T17:24:15 IST">
+  <suite name="Suite" duration-ms="92467" started-at="2019-11-12T21:47:54 IST" finished-at="2019-11-12T21:49:27 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24387" started-at="2019-11-11T17:23:50 IST" finished-at="2019-11-11T17:24:15 IST">
-      <class name="com.dreamorbit.scripts.AddResearcherCheck">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@4973813a]" name="launchAPP" is-config="true" duration-ms="8120" started-at="2019-11-11T17:23:50 IST" finished-at="2019-11-11T17:23:58 IST">
+    <test name="Test" duration-ms="92467" started-at="2019-11-12T21:47:54 IST" finished-at="2019-11-12T21:49:27 IST">
+      <class name="com.dreamorbit.scripts.ParticipantsLinkNavigationCheck">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ParticipantsLinkNavigationCheck@79be0360]" name="launchAPP" is-config="true" duration-ms="9148" started-at="2019-11-12T21:49:06 IST" finished-at="2019-11-12T21:49:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="FAIL" signature="AddResearcherCheckValid()[pri:12, instance:com.dreamorbit.scripts.AddResearcherCheck@4973813a]" name="AddResearcherCheckValid" duration-ms="15585" started-at="2019-11-11T17:23:58 IST" finished-at="2019-11-11T17:24:14 IST">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button _ngcontent-c5="" class="btn gen-btn btn-responsive" id="insert-more" role="button" title="Add Researcher" type="button">...</button> is not clickable at point (1760, 298). Other element would receive the click: <div class="swal2-container swal2-center swal2-fade swal2-shown" style="overflow-y: auto;">...</div>
-  (Session info: chrome=77.0.3865.120)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DOSYSNET071', ip: '172.30.244.134', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\karthik.m\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:58013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ba92e6bebac4b5429516997bc50d328b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-c5="" class="btn gen-btn btn-responsive" id="insert-more" role="button" title="Add Researcher" type="button">...</button> is not clickable at point (1760, 298). Other element would receive the click: <div class="swal2-container swal2-center swal2-fade swal2-shown" style="overflow-y: auto;">...</div>
-  (Session info: chrome=77.0.3865.120)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DOSYSNET071', ip: '172.30.244.134', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\karthik.m\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:58013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ba92e6bebac4b5429516997bc50d328b
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.dreamorbit.pages.ResearcherPage.addResearcherClick(ResearcherPage.java:38)
-at com.dreamorbit.generic.Commons.addResearcher(Commons.java:107)
-at com.dreamorbit.scripts.AddResearcherCheck.AddResearcherCheckValid(AddResearcherCheck.java:89)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="testValidlogin()[pri:19, instance:com.dreamorbit.scripts.ParticipantsLinkNavigationCheck@79be0360]" name="testValidlogin" duration-ms="11309" started-at="2019-11-12T21:49:15 IST" finished-at="2019-11-12T21:49:26 IST">
           <reporter-output>
             <line>
-              <![CDATA[RowCount=3]]>
+              <![CDATA[Functional verification of Participant link under Actions testcase is  passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddResearcherCheckValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@4973813a]" name="closeApp" is-config="true" duration-ms="641" started-at="2019-11-11T17:24:14 IST" finished-at="2019-11-11T17:24:15 IST">
+        </test-method> <!-- testValidlogin -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ParticipantsLinkNavigationCheck@79be0360]" name="closeApp" is-config="true" duration-ms="641" started-at="2019-11-12T21:49:26 IST" finished-at="2019-11-12T21:49:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.AddResearcherCheck -->
+      </class> <!-- com.dreamorbit.scripts.ParticipantsLinkNavigationCheck -->
+      <class name="com.dreamorbit.scripts.TestSearchResearcher">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestSearchResearcher@6321e813]" name="launchAPP" is-config="true" duration-ms="8062" started-at="2019-11-12T21:47:54 IST" finished-at="2019-11-12T21:48:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="searchResearcherValid()[pri:18, instance:com.dreamorbit.scripts.TestSearchResearcher@6321e813]" name="searchResearcherValid" duration-ms="62636" started-at="2019-11-12T21:48:02 IST" finished-at="2019-11-12T21:49:05 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Researcher exact Search test case with existing data is passed]]>
+            </line>
+            <line>
+              <![CDATA[auto111]]>
+            </line>
+            <line>
+              <![CDATA[Researcher partial Search test case with existing data is passed]]>
+            </line>
+            <line>
+              <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
+            </line>
+            <line>
+              <![CDATA[No such Researcher as *****]]>
+            </line>
+            <line>
+              <![CDATA[Researcher Search testcase with  non existing data is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchResearcherValid -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestSearchResearcher@6321e813]" name="closeApp" is-config="true" duration-ms="626" started-at="2019-11-12T21:49:05 IST" finished-at="2019-11-12T21:49:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.dreamorbit.scripts.TestSearchResearcher -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

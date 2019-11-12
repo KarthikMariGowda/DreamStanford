@@ -17,6 +17,8 @@ package com.dreamorbit.pages;
 			@FindBy(xpath="//span[.='Total Fellow Researchers']")
 			private WebElement totalFellowResearcher;
 			
+			@FindBy(xpath="//a[.='Participants']")
+			private WebElement participantALink;
 			
 			
 		
@@ -37,6 +39,10 @@ package com.dreamorbit.pages;
 				totalFellowResearcher.click();
 			}
 			
+			public void participantALinkClick()
+			{
+				participantALink.click();
+			}
 			
 			
 

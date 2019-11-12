@@ -20,8 +20,11 @@ public class ResearcherPage {
 
 	@FindBy(xpath = "//img[@src='assets/images/ic_remove.png']")
 	private WebElement crossButton;
-
 	
+	@FindBy(xpath = "//*[@id=\"first-row\"]/td[2]")
+	private WebElement firstRowREmail;
+	
+
 	
 	
 	
@@ -38,6 +41,11 @@ public class ResearcherPage {
 		addResearcher.click();
 	}
 	
+	public String getTextRSearch()//fetches the text from researcher search field 
+	{
+		String textInSearch= researcherSearchField.getAttribute("ng-reflect-model");
+		return textInSearch;
+	}
 	
 	public void inputsearchResearcherField(String searchParameter) {
 		researcherSearchField.sendKeys(searchParameter);
@@ -55,4 +63,12 @@ public class ResearcherPage {
 	public void crossButtonClick() {
 		crossButton.click();
 	}
+	
+	public String getfirstRowREmail() //gets first row researcher email ID
+	{
+		String topRowEmailID =firstRowREmail.getText();
+		return topRowEmailID;
+	}
+
+	
 }
