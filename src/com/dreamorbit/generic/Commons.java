@@ -20,12 +20,16 @@ import com.dreamorbit.pages.SymmetricKeyPage;
 public class Commons implements IAutoConstant
 
 {
-	BaseTest baseTest = new BaseTest();
 	long epochTime;
 	public String epochEmail;
 	public String partialEpochEmail;
 	public String nonExistingEmailID;
-
+	
+	
+	BaseTest baseTest = new BaseTest();
+	
+	//Constructor to define epoch time 
+	
 	public Commons() // When ever the Commons constructor is called or object is created a unique
 						// epoch time is generated -CONSTRUCTOR
 	{
@@ -48,10 +52,13 @@ public class Commons implements IAutoConstant
 		epochTime = date.getTime(); // using the date we can get epoch time using getTime();
 	}
 
+	
 	public Long getEpochTime() {
 		return epochTime;
 	}
 
+	
+	//Handling Toasts and Alerts
 	public String getToastMSG(WebDriver driver) throws InterruptedException {
 		WebElement toastBOX = driver.findElement(By.className("toast-message"));
 		WebDriverWait ewait = new WebDriverWait(driver, 10);
@@ -70,33 +77,17 @@ public class Commons implements IAutoConstant
 
 	}
 
-	public String AlertMSG(WebDriver driver) throws InterruptedException {
+	public String getAlertMSG(WebDriver driver) throws InterruptedException {
 
 		WebElement AlertBox = driver.findElement(By.className("swal2-validationerror"));
-		String AlertMds1 = AlertBox.getText();
-		return AlertMds1;
+		String AlertMesg = AlertBox.getText();
+		return AlertMesg;
 
 	}
 
-	public void toastwait(WebDriver driver) {
-
-		WebDriverWait ewait = new WebDriverWait(driver, 10);
-		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
-
-	}
-
-	public void studiesScreenWait(WebDriver driver) {
-
-		String VerifytokenLoc = "//*[@id=\"page-wrapper\"]/div/div[2]/div/div/app-studies/div[2]/div/table/tbody/tr/td[5]/ui-switch/span";
-		WebDriverWait ewait = new WebDriverWait(driver, ETO);
-		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(VerifytokenLoc)));
-	}
-
-	public void researchersScreenWait(WebDriver driver) {
-
-		WebDriverWait ewait = new WebDriverWait(driver, ETO);
-		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='insert-more']")));
-	}
+	
+	
+	// Commonly used Methods
 
 	public void login(WebDriver driver) {
 		LoginPage loginPage = new LoginPage(driver);
@@ -106,8 +97,8 @@ public class Commons implements IAutoConstant
 		loginPage.setPWD(pwd);
 		loginPage.clickLogin();
 	}
-
-	public void addResearcher(WebDriver driver) throws InterruptedException {
+	
+	public void addResearcher(WebDriver driver,String Emailid) throws InterruptedException {
 
 		Commons commons = new Commons();
 		ResearcherPage researcherPage = new ResearcherPage(driver);
@@ -131,26 +122,72 @@ public class Commons implements IAutoConstant
 
 		researcherPage.addResearcherClick();
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@src='assets/images/ic_save.png']")));
+
 		
-		
-		String vEmailid = baseTest.read_XL_Data(XL_DATA_PATH, "ValidResearcherEmails", 1, 0);
-		
+
 		Long epochTime = commons.getEpochTime();// calls getEpochTime() method
-		//Reporter.log(vEmailid.replace("@", epochTime + "@"), true);// replaces @ with epoch time and then appends @
-		epochEmail= vEmailid.replace("@", "+" + epochTime + "@");
+		// Reporter.log(vEmailid.replace("@", epochTime + "@"), true);// replaces @ with
+		// epoch time and then appends @
+		epochEmail = Emailid.replace("@", "+" + epochTime + "@");
 		researcherPage.setEmailAddress(epochEmail);// replaces @ with epoch time
-																						// appends "+" before epoch time
-																						// example-
-																						// karthik.m+11454544@dreamorbit.com
-		partialEpochEmail=epochEmail.replace("+" + epochTime + "@gmail.com", "");
-		
+													// appends "+" before epoch time
+													// example-
+													// karthik.m+11454544@dreamorbit.com
+		partialEpochEmail = epochEmail.replace("+" + epochTime + "@gmail.com", "");
+
 		researcherPage.tickButtonClick();
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id("swalSymmetricKey")));
 		symmetricKeyPage.sendSymmetricKey(sKey);
 		symmetricKeyPage.sK_clickOk();
 		Thread.sleep(5000);
-		
-		nonExistingEmailID= vEmailid = baseTest.read_XL_Data(XL_DATA_PATH, "NonExistingResearcherEmail", 1, 0);
+
+		nonExistingEmailID = baseTest.read_XL_Data(XL_DATA_PATH, "NonExistingResearcherEmail", 1, 0);
 
 	}
-}
+
+	
+	
+
+
+	// Waits
+
+	public void toastwait(WebDriver driver) {
+
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
+
+	}
+
+	public void studiesScreenWait(WebDriver driver) {
+
+		String VerifytokenLoc = "//*[@id=\"page-wrapper\"]/div/div[2]/div/div/app-studies/div[2]/div/table/tbody/tr/td[5]/ui-switch/span";
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(VerifytokenLoc)));
+	}
+
+	public void researchersScreenWait(WebDriver driver) {
+
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='insert-more']")));
+	}
+
+	public void participantListScreenWait(WebDriver driver) {
+
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[.='Decrypt']")));
+	}
+	
+	public void participantScreenWait(WebDriver driver) {
+
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='View Uploads']")));
+	}
+	
+	public void personalInfoScreenWait(WebDriver driver) {
+
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[.='Decrypt']")));
+	}
+
+
+	}

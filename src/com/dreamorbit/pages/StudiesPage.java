@@ -1,7 +1,6 @@
 package com.dreamorbit.pages;
 
 
-	
 
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
@@ -44,7 +43,17 @@ package com.dreamorbit.pages;
 				participantALink.click();
 			}
 			
-			
+			public boolean verifyTokeBTNState()
+			  {
+				  String tokenStatus =verifyToken.getAttribute("class");
+						  if((tokenStatus.contains("switch switch-small checked")))
+						  {
+							  return true;//when Verify token is ON
+						  }
+						  else {
+							  return false;//when Verify token is OFF
+						  }
+			  }
 
 		}
 

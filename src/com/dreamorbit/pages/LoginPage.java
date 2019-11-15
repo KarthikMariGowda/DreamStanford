@@ -19,7 +19,11 @@ public class LoginPage
 	@FindBy(xpath="//a[.=\"Forgot Password?\"]")
 	private WebElement forgotPwd;
 	
+	@FindBy(xpath="//input[@id='userPassword']")
+	private WebElement pwdField;
 	
+	@FindBy(xpath="//span[@id='showhide']")
+	private WebElement showHideBTN;
 
 	
 	public LoginPage(WebDriver driver)//Initialization to handle stale element exception
@@ -58,6 +62,22 @@ public class LoginPage
 		forgotPwd.click();
 	}
 	
-
+	public void clickShowHide()
+	{
+	showHideBTN.click();
+	}
+	
+	public boolean showHideState()
+	  {
+		  String typeStatus =pwdField.getAttribute("type");
+				  if((typeStatus.contains("password")))
+				  {
+					  return true;//when password is hidden
+				  }
+				  else {
+					  return false;//When password is showing/Visible
+				  }
+	  }
+	  
 }
 

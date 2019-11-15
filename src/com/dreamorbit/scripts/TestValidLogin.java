@@ -5,6 +5,39 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -24,10 +57,10 @@ public class TestValidLogin extends BaseTest
 		
 		try {
 			AssertJUnit.assertEquals(aLPUrl, studyUrl);
-			Reporter.log("Login testcase with valid data is passed");
+			Reporter.log("Login testcase with valid data is passed",true);
 		} 
 		catch (AssertionError e) {
-			Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed");
+			Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed",true);
 			AssertJUnit.fail();
 		}
 	}

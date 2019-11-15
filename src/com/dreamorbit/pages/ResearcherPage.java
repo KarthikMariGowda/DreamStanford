@@ -27,11 +27,9 @@ public class ResearcherPage {
 
 	
 	
-	
 	public ResearcherPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
 	
 	
 	
@@ -56,6 +54,12 @@ public class ResearcherPage {
 		EmailAddressTB.sendKeys(researcherEmail);
 	}
 
+	public void clearEmailAddress() 
+	{
+		EmailAddressTB.clear();
+	}
+
+	
 	public void tickButtonClick() {
 		tickButton.click();
 	}

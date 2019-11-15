@@ -9,9 +9,9 @@ import org.openqa.selenium.WebDriver;
 	{
 		//Declaration
 		@FindBy(xpath= "//th[.='No.']/ancestor::table/tbody[1]/tr[2]/td[4]/a[@class='text-upload']")
-		private WebElement button_Uploads;//for top most uploads button
+		private WebElement button_Uploads;//for second top most uploads button
 		
-		@FindBy(xpath= "button[.='Decrypt']")
+		@FindBy(xpath= "//button[.='Decrypt']")
 		private WebElement button_Decrypt;
 		
 		
@@ -29,7 +29,7 @@ import org.openqa.selenium.WebDriver;
 
 		
 		//Utilization methods
-		public void clickUploads()
+		public void clickUploads()//always clicks the uploads which is second row in the list
 		{
 			button_Uploads.click();
 		}
@@ -45,4 +45,16 @@ import org.openqa.selenium.WebDriver;
 			button_downArrow.click();
 		}
 
+		public Boolean isDecrptBTNEnabled()
+		{
+			Boolean isDecrptBTNEnabled =button_Decrypt.isEnabled();
+			return isDecrptBTNEnabled;
+		}
+
+		public String buttonUploadsCount()
+		{
+			String uploadsCount =button_Uploads.getText();
+			return uploadsCount;
+		}
+		
 		}

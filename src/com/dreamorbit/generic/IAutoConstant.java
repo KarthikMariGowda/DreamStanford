@@ -21,8 +21,8 @@ public interface IAutoConstant {
 		String RatingPageUrl="https://qa-stanford.phaware.global/ratings";
 		String ParticipantUrl= "https://qa-stanford.phaware.global/organization/126/studies/18/participants";
 		
-		long ITO=10;
-		long ETO=10;
+		long ITO=15;
+		long ETO=20;
 		
 		
 

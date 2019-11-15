@@ -1,4 +1,11 @@
 package com.dreamorbit.scripts;
+
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -60,7 +67,6 @@ import com.dreamorbit.pages.ParticipantListPage;
 import com.dreamorbit.pages.ParticipantPage;
 import com.dreamorbit.pages.SymmetricKeyPage;
 
-
 public class JsonDownloadValidSkey extends BaseTest
 
 {
@@ -93,24 +99,5 @@ public class JsonDownloadValidSkey extends BaseTest
 			 String actualDownlaodSuccessToast= commons.getToastMSG(driver);
 			 AssertJUnit.assertEquals(actualDownlaodSuccessToast, "File downloaded successfully");
 			 Reporter.log("Json Download testcase with valid symmetric key is passed");
-			 
-			 
-		/*
-		 * WebElement downloadToast=driver.findElement(By.className("toast-message"));
-		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 * Reporter.log("check 2 "+downloadToast,true);
-		 * ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id(
-		 * "toast-container"))); String
-		 * downloadToastMess=downloadToast.getAttribute("aria-label");//
-		 * ="Invalid current password"Reporter.log(downloadToastMess, true);
-		 * Assert.assertEquals(downloadToastMess,"File downloaded successfully");
-		 * Reporter.log("Json Download testcase is passed"); Thread.sleep(8000);
-		 * Assert.assertEquals(actual, expected);
-		 */
 	}
-
 }
-
-
- 
- 

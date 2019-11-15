@@ -1,81 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="16" total="18" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Researcher exact Search test case with existing data is passed]]>
+      <![CDATA[RowCount=3]]>
     </line>
     <line>
-      <![CDATA[auto111]]>
+      <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
     </line>
     <line>
-      <![CDATA[Researcher partial Search test case with existing data is passed]]>
+      <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
     </line>
     <line>
-      <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
-    </line>
-    <line>
-      <![CDATA[No such Researcher as *****]]>
-    </line>
-    <line>
-      <![CDATA[Researcher Search testcase with  non existing data is passed]]>
-    </line>
-    <line>
-      <![CDATA[Functional verification of Participant link under Actions testcase is  passed]]>
+      <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="92467" started-at="2019-11-12T21:47:54 IST" finished-at="2019-11-12T21:49:27 IST">
+  <suite name="Default suite" duration-ms="39393" started-at="2019-11-15T19:04:00 IST" finished-at="2019-11-15T19:04:39 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="92467" started-at="2019-11-12T21:47:54 IST" finished-at="2019-11-12T21:49:27 IST">
-      <class name="com.dreamorbit.scripts.ParticipantsLinkNavigationCheck">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ParticipantsLinkNavigationCheck@79be0360]" name="launchAPP" is-config="true" duration-ms="9148" started-at="2019-11-12T21:49:06 IST" finished-at="2019-11-12T21:49:15 IST">
+    <test name="Default test" duration-ms="39393" started-at="2019-11-15T19:04:00 IST" finished-at="2019-11-15T19:04:39 IST">
+      <class name="com.dreamorbit.scripts.AddResearcherCheck">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@578486a3]" name="launchAPP" is-config="true" duration-ms="8083" started-at="2019-11-15T19:04:00 IST" finished-at="2019-11-15T19:04:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="testValidlogin()[pri:19, instance:com.dreamorbit.scripts.ParticipantsLinkNavigationCheck@79be0360]" name="testValidlogin" duration-ms="11309" started-at="2019-11-12T21:49:15 IST" finished-at="2019-11-12T21:49:26 IST">
+        <test-method status="PASS" signature="AddResearcherCheckInValid()[pri:13, instance:com.dreamorbit.scripts.AddResearcherCheck@578486a3]" name="AddResearcherCheckInValid" duration-ms="30654" started-at="2019-11-15T19:04:08 IST" finished-at="2019-11-15T19:04:38 IST">
           <reporter-output>
             <line>
-              <![CDATA[Functional verification of Participant link under Actions testcase is  passed]]>
+              <![CDATA[RowCount=3]]>
+            </line>
+            <line>
+              <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
+            </line>
+            <line>
+              <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
+            </line>
+            <line>
+              <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testValidlogin -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ParticipantsLinkNavigationCheck@79be0360]" name="closeApp" is-config="true" duration-ms="641" started-at="2019-11-12T21:49:26 IST" finished-at="2019-11-12T21:49:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.ParticipantsLinkNavigationCheck -->
-      <class name="com.dreamorbit.scripts.TestSearchResearcher">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestSearchResearcher@6321e813]" name="launchAPP" is-config="true" duration-ms="8062" started-at="2019-11-12T21:47:54 IST" finished-at="2019-11-12T21:48:02 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="searchResearcherValid()[pri:18, instance:com.dreamorbit.scripts.TestSearchResearcher@6321e813]" name="searchResearcherValid" duration-ms="62636" started-at="2019-11-12T21:48:02 IST" finished-at="2019-11-12T21:49:05 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Researcher exact Search test case with existing data is passed]]>
-            </line>
-            <line>
-              <![CDATA[auto111]]>
-            </line>
-            <line>
-              <![CDATA[Researcher partial Search test case with existing data is passed]]>
-            </line>
-            <line>
-              <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
-            </line>
-            <line>
-              <![CDATA[No such Researcher as *****]]>
-            </line>
-            <line>
-              <![CDATA[Researcher Search testcase with  non existing data is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- searchResearcherValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestSearchResearcher@6321e813]" name="closeApp" is-config="true" duration-ms="626" started-at="2019-11-12T21:49:05 IST" finished-at="2019-11-12T21:49:06 IST">
+        </test-method> <!-- AddResearcherCheckInValid -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@578486a3]" name="closeApp" is-config="true" duration-ms="621" started-at="2019-11-15T19:04:38 IST" finished-at="2019-11-15T19:04:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestSearchResearcher -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.dreamorbit.scripts.AddResearcherCheck -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
