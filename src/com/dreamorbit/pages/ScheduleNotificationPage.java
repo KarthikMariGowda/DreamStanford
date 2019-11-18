@@ -1,5 +1,6 @@
 package com.dreamorbit.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,22 +9,22 @@ import org.openqa.selenium.support.PageFactory;
 public class ScheduleNotificationPage 
 {
 	
-	@FindBy(xpath= "//input[@type='text']")// Declaration
+	@FindBy(xpath= "//mat-dialog-content/div/div[1]/mat-form-field/div/div[1]/div/mat-select/div/div[1]")// Declaration
 	private WebElement activity;
 	
-	@FindBy(id= "userPassword")
+	@FindBy(xpath= "//mat-dialog-content/div/div[2]/mat-form-field/div/div[1]/div/mat-select/div/div[1]")
 	private WebElement schedule;
 	
-	@FindBy(xpath= "//button[.='Login']")
+	@FindBy(xpath= "//mat-dialog-content/div/div[3]/mat-form-field/div/div[1]/div/mat-select/div/div[1]")
 	private WebElement days;
 	
 	@FindBy(xpath="//mat-dialog-content/div/div[4]/mat-form-field/div/div[1]/div")
 	private WebElement time;
 	
-	@FindBy(xpath="//input[@id='userPassword']")
+	@FindBy(xpath="//span[.='Save']")
 	private WebElement sNsaveBTN;
 	
-	@FindBy(xpath="//span[@id='showhide']")
+	@FindBy(xpath="//span[.='Cancel']")
 	private WebElement sNcancelBTN;
 
 	
@@ -33,22 +34,41 @@ public class ScheduleNotificationPage
 	}
 	
 	
-	public void setUN(String un)//Utilization methods
+	public void activityDropDownClick()
 	{
-		unTB.sendKeys(un);
+		activity.click();
 	}
 	
-	public void clrUN()
+	public void scheduleDropdownClick()
 	{
-		unTB.clear();
+		schedule.click();
 	}
 	
-	public void setPWD(String pwd)
+	public void daysDropdownClick()
 	{
-		pwdTB.sendKeys(pwd);
+		schedule.click();
 	}
 	
-
+	public void timeClick()
+	{
+		time.click();
+	}
+	
+	public void sendTime()
+	{
+		time.sendKeys("1256PM");
+	}
+	
+	public void saveSNclick()
+	{
+		sNsaveBTN.click();
+	}
+	
+	public void CancelSNclick()
+	{
+		sNsaveBTN.click();
+	}
+	
 
 	
 	

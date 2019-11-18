@@ -3,6 +3,9 @@ package com.dreamorbit.scripts;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,6 +15,7 @@ import org.testng.annotations.Test;
 import com.dreamorbit.generic.BaseTest;
 import com.dreamorbit.generic.Commons;
 import com.dreamorbit.pages.ParticipantListPage;
+import com.dreamorbit.pages.ScheduleNotificationPage;
 import com.dreamorbit.pages.StudiesPage;
 import com.dreamorbit.pages.SymmetricKeyPage;
 
@@ -22,7 +26,7 @@ public class TestNotification extends BaseTest {
 
 		Commons commons = new Commons();
 		StudiesPage studiesPage = new StudiesPage(driver);
-		
+		ScheduleNotificationPage scheduleNotificationPage= new ScheduleNotificationPage(driver);
 
 		commons.login(driver);
 		commons.studiesScreenWait(driver);
@@ -34,8 +38,8 @@ public class TestNotification extends BaseTest {
 		
 		//ACTIVITY
 		
-		driver.findElement(By.xpath("//mat-dialog-content/div/div[1]/mat-form-field/div/div[1]/div/mat-select/div/div[1]")).click();
-		Thread.sleep(8000);
+		scheduleNotificationPage.activityDropDownClick();
+		Thread.sleep(4000);
 
 		List<WebElement> activityMenu =driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
 			
@@ -46,8 +50,6 @@ public class TestNotification extends BaseTest {
 			
 			WebElement aOption = activityMenu.get(i);
 			String innerhtml = aOption.getAttribute("innerHTML");
-			System.out.println(innerhtml);
-			
 			
 			if (innerhtml.contains("6 Minute Walk Test"))
 			{
@@ -60,8 +62,8 @@ public class TestNotification extends BaseTest {
 		//SCHEDULE
 		
 		
-		driver.findElement(By.xpath("//mat-dialog-content/div/div[2]/mat-form-field/div/div[1]/div/mat-select/div/div[1]")).click();
-		Thread.sleep(8000);
+		scheduleNotificationPage.scheduleDropdownClick();
+		Thread.sleep(4000);
 		
 		
 		List<WebElement> scheduleMenu =driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
@@ -69,12 +71,9 @@ public class TestNotification extends BaseTest {
 																								
 	for (int i = 0; i < scheduleMenu.size(); i++)
 	{
-	System.out.println(scheduleMenu.size());
 
 	WebElement sOption = scheduleMenu.get(i);
 	String innerhtml = sOption.getAttribute("innerHTML");
-	System.out.println(innerhtml);
-
 
 	if (innerhtml.contains("Weekly"))
 	{
@@ -88,18 +87,17 @@ public class TestNotification extends BaseTest {
 
 //DAYS
 	
-	driver.findElement(By.xpath("//mat-dialog-content/div/div[3]/mat-form-field/div/div[1]/div/mat-select/div/div[1]")).click();
-	Thread.sleep(8000);
+	scheduleNotificationPage.daysDropdownClick();
+	Thread.sleep(4000);
 	
 	
 	List<WebElement> daysMenu =driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
 	for (int i = 0; i < scheduleMenu.size(); i++)
 {
-System.out.println(daysMenu.size());
+		
 
 WebElement dOption = daysMenu.get(i);
 String innerhtml = dOption.getAttribute("innerHTML");
-System.out.println(innerhtml);
 
 
 if (innerhtml.contains("Friday"))
@@ -112,11 +110,18 @@ if (innerhtml.contains("Friday"))
 }
 
 Thread.sleep(5000);
+
+scheduleNotificationPage.timeClick();
+scheduleNotificationPage.sendTime();
+Thread.sleep(5000);
+scheduleNotificationPage.saveSNclick();
+Thread.sleep(5000);
+
 }
 
 
 		
-	}
+}
 
 	
 
