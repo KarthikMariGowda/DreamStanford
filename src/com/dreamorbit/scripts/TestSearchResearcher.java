@@ -174,6 +174,51 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.Reporter;
@@ -185,7 +230,7 @@ import com.dreamorbit.pages.SearchFieldPage;
 import com.dreamorbit.pages.SymmetricKeyPage;
 
 public class TestSearchResearcher extends BaseTest {
-	@Test(priority = 18, enabled = true)
+	@Test(priority = 18, enabled = false)
 	public void searchResearcherValid() throws InterruptedException {
 		
 		String vEmailid = read_XL_Data(XL_DATA_PATH, "ValidResearcherEmails", 1, 0);
@@ -215,7 +260,7 @@ public class TestSearchResearcher extends BaseTest {
 			Reporter.log("Researcher exact Search test case with existing data is passed", true);
 		} catch (AssertionError e) {
 			Reporter.log("The Expected Search result \" +commons.epochEmail+ \"is not Dispalyed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 		searchFieldPage.searchClearBTNClick();
@@ -231,7 +276,7 @@ public class TestSearchResearcher extends BaseTest {
 			Reporter.log("Researcher partial Search test case with existing data is passed", true);
 		} else {
 			Reporter.log("The Expected partial Search result \" +commons.epochEmail+ \"is not Dispalyed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 		searchFieldPage.searchClearBTNClick();
@@ -243,7 +288,7 @@ public class TestSearchResearcher extends BaseTest {
 			Reporter.log("Clear button functionality in researcher search- testcase is passed ", true);
 		} catch (AssertionError e) {
 			Reporter.log("Clear button in researcher search is not working as expected ", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 		Thread.sleep(4000);
@@ -259,7 +304,7 @@ public class TestSearchResearcher extends BaseTest {
 
 		} else {
 			Reporter.log("Researcher Search testcase with  non existing data is failed", true);
-			Assert.fail();
+			AssertJUnit.fail();
 		}
 
 	}

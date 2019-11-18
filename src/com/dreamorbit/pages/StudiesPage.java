@@ -13,11 +13,13 @@ package com.dreamorbit.pages;
 			@FindBy(xpath="//*[@id=\"page-wrapper\"]/div/div[2]/div/div/app-studies/div[2]/div/table/tbody/tr/td[5]/ui-switch/span")// Declaration
 			private WebElement verifyToken;
 			
-			@FindBy(xpath="//span[.='Total Fellow Researchers']")
-			private WebElement totalFellowResearcher;
+			
 			
 			@FindBy(xpath="//a[.='Participants']")
 			private WebElement participantALink;
+			
+			@FindBy(xpath="//button[.='Schedule Notification']")
+			private WebElement scheduleNotificationBTN;
 			
 			
 		
@@ -33,9 +35,9 @@ package com.dreamorbit.pages;
 				verifyToken.click();
 			}
 			
-			public void totalFellowResearcherClick()
+			public void scheduleNotificationBTNClick()
 			{
-				totalFellowResearcher.click();
+				scheduleNotificationBTN.click();
 			}
 			
 			public void participantALinkClick()

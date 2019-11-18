@@ -1,6 +1,44 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -67,7 +105,7 @@ public class DecryptParticipantsVerification extends BaseTest
 		} 
 		catch (AssertionError e) {
 			Reporter.log("Participants Link Navigation under Actions testcase is  failed"+"Actual URL" +aPPUrl+ "," + "Expected URL"+ ParticipantUrl, true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 		
 		participantListPage.clickDecrypt();
@@ -80,7 +118,7 @@ public class DecryptParticipantsVerification extends BaseTest
 			 Reporter.log("Decrypt Participants in list testcase with valid symmetric key is Passed",true);
 		} catch (Exception e) {
 			Reporter.log("Decrypt Participants in list testcase with valid symmetric key is Failed",true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 		 
 		 
@@ -90,7 +128,7 @@ public class DecryptParticipantsVerification extends BaseTest
 			} 
 			catch (AssertionError e) {
 				Reporter.log("Decrypt Participants button is enabled, testcase is failed", true);
-				AssertJUnit.fail();
+				Assert.fail();
 			}
 			
 		 

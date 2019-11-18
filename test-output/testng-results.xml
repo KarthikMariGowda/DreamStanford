@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[RowCount=3]]>
-    </line>
-    <line>
-      <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39393" started-at="2019-11-15T19:04:00 IST" finished-at="2019-11-15T19:04:39 IST">
+  <suite name="Default suite" duration-ms="88825" started-at="2019-11-17T19:03:27Z" finished-at="2019-11-17T19:04:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39393" started-at="2019-11-15T19:04:00 IST" finished-at="2019-11-15T19:04:39 IST">
-      <class name="com.dreamorbit.scripts.AddResearcherCheck">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@578486a3]" name="launchAPP" is-config="true" duration-ms="8083" started-at="2019-11-15T19:04:00 IST" finished-at="2019-11-15T19:04:08 IST">
+    <test name="Default test" duration-ms="88825" started-at="2019-11-17T19:03:27Z" finished-at="2019-11-17T19:04:56Z">
+      <class name="com.dreamorbit.scripts.TestNotification">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestNotification@59f99ea]" name="launchAPP" is-config="true" duration-ms="33885" started-at="2019-11-17T19:03:27Z" finished-at="2019-11-17T19:04:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="AddResearcherCheckInValid()[pri:13, instance:com.dreamorbit.scripts.AddResearcherCheck@578486a3]" name="AddResearcherCheckInValid" duration-ms="30654" started-at="2019-11-15T19:04:08 IST" finished-at="2019-11-15T19:04:38 IST">
+        <test-method status="PASS" signature="setNotification()[pri:23, instance:com.dreamorbit.scripts.TestNotification@59f99ea]" name="setNotification" duration-ms="54142" started-at="2019-11-17T19:04:01Z" finished-at="2019-11-17T19:04:55Z">
           <reporter-output>
-            <line>
-              <![CDATA[RowCount=3]]>
-            </line>
-            <line>
-              <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
-            </line>
-            <line>
-              <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
-            </line>
-            <line>
-              <![CDATA[Trying to add researcher with invalid email iD's - testcase is passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- AddResearcherCheckInValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@578486a3]" name="closeApp" is-config="true" duration-ms="621" started-at="2019-11-15T19:04:38 IST" finished-at="2019-11-15T19:04:39 IST">
+        </test-method> <!-- setNotification -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestNotification@59f99ea]" name="closeApp" is-config="true" duration-ms="781" started-at="2019-11-17T19:04:55Z" finished-at="2019-11-17T19:04:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.AddResearcherCheck -->
+      </class> <!-- com.dreamorbit.scripts.TestNotification -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
