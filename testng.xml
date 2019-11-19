@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.dreamorbit.scripts.LogoutVerification"/>
-      <class name="com.dreamorbit.scripts.NavigationCheckUploadsLink"/>
-      <class name="com.dreamorbit.scripts.VerifyTokenToggleBTN"/>
-      <class name="com.dreamorbit.scripts.TestShowHidePassword"/>
-      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkey"/>
-      <class name="com.dreamorbit.scripts.JsonDownloadValidSkey"/>
-      <class name="com.dreamorbit.scripts.TestValidLogin"/>
-      <class name="com.dreamorbit.scripts.VerifySessionExpiry"/>
-      <class name="com.dreamorbit.scripts.NavigationCheckOnDrawerOptions"/>
-      <class name="com.dreamorbit.scripts.DecryptParticipantsVerification"/>
-      <class name="com.dreamorbit.scripts.TestSearchResearcher"/>
-      <class name="com.dreamorbit.scripts.TestResetPasswordValid"/>
-      <class name="com.dreamorbit.scripts.PersonalInfoDecrypt"/>
       <class name="com.dreamorbit.scripts.TestNotification"/>
-      <class name="com.dreamorbit.scripts.TestInvalidLogin"/>
-      <class name="com.dreamorbit.scripts.ForgotPasswordCheck"/>
-      <class name="com.dreamorbit.scripts.AddResearcherCheck"/>
-      <class name="com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

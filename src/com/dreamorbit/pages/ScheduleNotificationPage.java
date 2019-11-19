@@ -46,7 +46,20 @@ public class ScheduleNotificationPage
 	
 	public void daysDropdownClick()
 	{
-		schedule.click();
+		days.click();
+	}
+	
+	public void chkDaysDDIsDisabled() throws InterruptedException
+	{
+
+		
+		String ariadisabledstate = days.getAttribute("class");
+		System.out.println(ariadisabledstate);
+		//boolean isDisabled = ariadisabledstate.contains("false");
+		
+		 //boolean daysEnabled= days.isSelected();// will not work as it will be developed using java script and it has its owns values
+		
+		//return isDisabled;
 	}
 	
 	public void timeClick()

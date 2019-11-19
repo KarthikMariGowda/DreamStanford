@@ -1,6 +1,59 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -455,7 +508,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed");
-		AssertJUnit.fail();
+		Assert.fail();
 	}
 	
 	
@@ -469,7 +522,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed",true);
-		AssertJUnit.fail();
+		Assert.fail();
 	}
 	
 	
@@ -483,7 +536,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed",true);
-		AssertJUnit.fail();
+		Assert.fail();
 	}
 	
 	
@@ -497,7 +550,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed",true);
-		AssertJUnit.fail();
+		Assert.fail();
 	}
 	
 }

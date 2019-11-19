@@ -2,6 +2,45 @@ package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -10,6 +49,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.dreamorbit.generic.BaseTest;
@@ -32,14 +72,14 @@ public class TestNotification extends BaseTest {
 		commons.studiesScreenWait(driver);
 		Thread.sleep(9000);
 		studiesPage.scheduleNotificationBTNClick();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		
 		
 		
 		//ACTIVITY
 		
 		scheduleNotificationPage.activityDropDownClick();
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 
 		List<WebElement> activityMenu =driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
 			
@@ -62,62 +102,77 @@ public class TestNotification extends BaseTest {
 		//SCHEDULE
 		
 		
-		scheduleNotificationPage.scheduleDropdownClick();
-		Thread.sleep(4000);
 		
-		
-		List<WebElement> scheduleMenu =driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
-	
-																								
-	for (int i = 0; i < scheduleMenu.size(); i++)
-	{
-
-	WebElement sOption = scheduleMenu.get(i);
-	String innerhtml = sOption.getAttribute("innerHTML");
-
-	if (innerhtml.contains("Weekly"))
-	{
-		sOption.click();
-		break;
-
-	}
-
-	}
-
-
+		  scheduleNotificationPage.scheduleDropdownClick(); 
+		  Thread.sleep(3000);
+		  
+		  
+		  List<WebElement> scheduleMenu=driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
+		  
+		   for (int i = 0; i<scheduleMenu.size(); i++) 
+		   {
+		  
+		  WebElement sOption = scheduleMenu.get(i);
+		  String innerhtml = sOption.getAttribute("innerHTML");
+		  
+		  if (innerhtml.contains("Daily")) 
+		  { 
+			  Actions actions = new Actions(driver);
+		  actions.moveToElement(sOption).click().build().perform(); //sOption.click();
+		  break;
+		  
+		  
+		  }
+		  
+		  }
+		   Thread.sleep(5000);	
+		   
+		   scheduleNotificationPage.chkDaysDDIsDisabled();
+		   
+		  // boolean daysDropdownstate= 
+		   
+		   
+		   
+		/*
+		 * System.out.println(daysDropdownstate);
+		 * AssertJUnit.assertEquals(daysDropdownstate, true);
+		 * 
+		 * Reporter.
+		 * log("Days drop down is disabled on daily schedule selection-Test case passed "
+		 * );
+		 * 
+		 * scheduleNotificationPage.timeClick(); scheduleNotificationPage.sendTime();
+		 * Thread.sleep(5000); scheduleNotificationPage.saveSNclick();
+		 * Thread.sleep(5000);
+		 */
 //DAYS
 	
-	scheduleNotificationPage.daysDropdownClick();
-	Thread.sleep(4000);
-	
-	
-	List<WebElement> daysMenu =driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
-	for (int i = 0; i < scheduleMenu.size(); i++)
-{
-		
-
-WebElement dOption = daysMenu.get(i);
-String innerhtml = dOption.getAttribute("innerHTML");
-
-
-if (innerhtml.contains("Friday"))
-{
-	dOption.click();
-	break;
-
-}
-
-}
-
-Thread.sleep(5000);
-
-scheduleNotificationPage.timeClick();
-scheduleNotificationPage.sendTime();
-Thread.sleep(5000);
-scheduleNotificationPage.saveSNclick();
-Thread.sleep(5000);
-
-}
+		/*
+		 * scheduleNotificationPage.daysDropdownClick(); Thread.sleep(4000);
+		 * 
+		 * 
+		 * List<WebElement> daysMenu
+		 * =driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
+		 * for (int i = 0; i < daysMenu.size(); i++) {
+		 * 
+		 * 
+		 * WebElement dOption = daysMenu.get(i); String innerhtml =
+		 * dOption.getAttribute("innerHTML");
+		 * 
+		 * 
+		 * if (innerhtml.contains("Friday")) { dOption.click(); break;
+		 * 
+		 * }
+		 * 
+		 * }
+		 * 
+		 * Thread.sleep(5000);
+		 * 
+		 * scheduleNotificationPage.timeClick(); scheduleNotificationPage.sendTime();
+		 * Thread.sleep(5000); scheduleNotificationPage.saveSNclick();
+		 * Thread.sleep(5000);
+		 * 
+		 */}
 
 
 		

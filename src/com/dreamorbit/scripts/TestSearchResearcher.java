@@ -228,6 +228,69 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.Reporter;
@@ -269,7 +332,7 @@ public class TestSearchResearcher extends BaseTest {
 			Reporter.log("Researcher exact Search test case with existing data is passed", true);
 		} catch (AssertionError e) {
 			Reporter.log("The Expected Search result \" +commons.epochEmail+ \"is not Dispalyed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 		searchFieldPage.searchClearBTNClick();
@@ -285,7 +348,7 @@ public class TestSearchResearcher extends BaseTest {
 			Reporter.log("Researcher partial Search test case with existing data is passed", true);
 		} else {
 			Reporter.log("The Expected partial Search result \" +commons.epochEmail+ \"is not Dispalyed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 		searchFieldPage.searchClearBTNClick();
@@ -297,7 +360,7 @@ public class TestSearchResearcher extends BaseTest {
 			Reporter.log("Clear button functionality in researcher search- testcase is passed ", true);
 		} catch (AssertionError e) {
 			Reporter.log("Clear button in researcher search is not working as expected ", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 		Thread.sleep(4000);
@@ -313,7 +376,7 @@ public class TestSearchResearcher extends BaseTest {
 
 		} else {
 			Reporter.log("Researcher Search testcase with  non existing data is failed", true);
-			Assert.fail();
+			AssertJUnit.fail();
 		}
 
 	}
