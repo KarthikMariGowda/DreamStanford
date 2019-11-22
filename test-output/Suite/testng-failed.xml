@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dreamorbit.scripts.AddResearcherCheck">
+      <class name="com.dreamorbit.scripts.TestStar">
         <methods>
           <include name="closeApp"/>
-          <include name="AddResearcherCheckInValid"/>
           <include name="launchAPP"/>
+          <include name="navigationFlowCheck"/>
         </methods>
-      </class> <!-- com.dreamorbit.scripts.AddResearcherCheck -->
-      <class name="com.dreamorbit.scripts.VerifyTokenToggleBTN">
-        <methods>
-          <include name="closeApp"/>
-          <include name="VerifyTokenCheck"/>
-          <include name="launchAPP"/>
-        </methods>
-      </class> <!-- com.dreamorbit.scripts.VerifyTokenToggleBTN -->
+      </class> <!-- com.dreamorbit.scripts.TestStar -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

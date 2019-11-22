@@ -1,5 +1,9 @@
 package com.dreamorbit.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,29 +52,33 @@ public class ScheduleNotificationPage
 	{
 		days.click();
 	}
-	
-	public void chkDaysDDIsDisabled() throws InterruptedException
-	{
 
-		
-		String ariadisabledstate = days.getAttribute("class");
-		System.out.println(ariadisabledstate);
-		//boolean isDisabled = ariadisabledstate.contains("false");
-		
-		 //boolean daysEnabled= days.isSelected();// will not work as it will be developed using java script and it has its owns values
-		
-		//return isDisabled;
+	/*
+	 * String ariadisabledstate = days.getAttribute("aria-disabled");
+	 * System.out.println(ariadisabledstate); return ariadisabledstate;
+	 */
+	public boolean chkDaysDDIsEnabled() throws InterruptedException
+	{
+		boolean dayFiledstate = days.isSelected();
+		return dayFiledstate;
 	}
 	
-	public void timeClick()
+	public void sendTime() throws AWTException, InterruptedException
 	{
 		time.click();
+		 Robot robot = new Robot();      
+		    robot.delay(2000);
+		    robot.keyPress(KeyEvent.VK_1);
+		    robot.keyRelease(KeyEvent.VK_1);
+		    robot.keyPress(KeyEvent.VK_2);
+		    robot.keyPress(KeyEvent.VK_2);
+		    robot.keyPress(KeyEvent.VK_0);
+		    robot.keyRelease(KeyEvent.VK_0);
+		    Thread.sleep(3000);
+		    robot.keyPress(KeyEvent.VK_A);
+		    robot.keyRelease(KeyEvent.VK_A);
 	}
 	
-	public void sendTime()
-	{
-		time.sendKeys("1256PM");
-	}
 	
 	public void saveSNclick()
 	{
