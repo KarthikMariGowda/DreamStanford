@@ -149,9 +149,14 @@ public class AddResearcherCheck extends BaseTest {
 		String vEmailid = read_XL_Data(XL_DATA_PATH, "ValidResearcherEmails", 1, 0);
 		
 		SymmetricKeyPage symmetricKeyPage = new SymmetricKeyPage(driver);
+		NavigationDrawerPage navigationDrawerPage = new NavigationDrawerPage(driver);
 		Commons commons = new Commons();
 		
+		commons.login(driver);
+		commons.studiesScreenWait(driver);
 		
+		navigationDrawerPage.nDResearchersClick();
+		Thread.sleep(4000);
 		
 		commons.addResearcher(driver,vEmailid);
 		Thread.sleep(2000);

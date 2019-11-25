@@ -1,6 +1,14 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -37,17 +45,27 @@ public class TestNotification extends BaseTest {
 		// ACTIVITY
 		scheduleNotificationPage.activityDropDownClick();
 		Thread.sleep(3000);
+		List<WebElement> activityMenu = driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
 
-		
-			
-			
+		for (int i = 0; i < activityMenu.size(); i++) {
+			System.out.println(activityMenu.size());
+
+			WebElement aOption = activityMenu.get(i);
+			String innerhtml = aOption.getAttribute("innerHTML");
+
+			if (innerhtml.contains("6 Minute Walk Test")) {
+				aOption.click();
+				break;
+			}
 
 		}
+		
+			
 		
 		// SCHEDULE
 
 		scheduleNotificationPage.scheduleDropdownClick();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		List<WebElement> scheduleMenu = driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
 
@@ -85,8 +103,11 @@ public class TestNotification extends BaseTest {
 			Reporter.log("Notification is updating successfully for Daily schedule-Test case passed", true);
 		} catch (Exception e) {
 			Reporter.log("Notification updating for Daily schedule-Test case Failed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
+		
+		
+		
 
 	}
 
@@ -181,7 +202,7 @@ public class TestNotification extends BaseTest {
 			Reporter.log("Notification is updating successfully for Daily schedule-Test case passed", true);
 		} catch (Exception e) {
 			Reporter.log("Notification updating for Daily schedule-Test case Failed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 	}

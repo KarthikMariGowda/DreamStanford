@@ -176,6 +176,10 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.AssertJUnit;
@@ -201,10 +205,9 @@ public class JsonDownloadValidSkey extends BaseTest
 		
 		LabelPage studypage= new LabelPage(driver);
 		ParticipantListPage participantListPage = new ParticipantListPage(driver);
-		ParticipantPage participantPage= new ParticipantPage(driver);
-		SymmetricKeyPage symmetricKeyPage= new SymmetricKeyPage(driver);
+	
 		
-		String validSKEY = baseTest.read_XL_Data(XL_DATA_PATH,"SymmtricKeyValid",1,0);
+		
 		
 			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			 commons.login(driver); 
@@ -214,9 +217,11 @@ public class JsonDownloadValidSkey extends BaseTest
 			 Thread.sleep(3000);
 			 participantListPage.clickUploads();
 			 Thread.sleep(2000); 
-			 participantPage.fileJsonClick();
-			 symmetricKeyPage.sendSymmetricKey(validSKEY);
-			 symmetricKeyPage.sK_clickOk(); 
+			 commons.downloadJson(driver);
+		/*
+		 * participantPage.fileJsonClick();
+		 * symmetricKeyPage.sendSymmetricKey(validSKEY); symmetricKeyPage.sK_clickOk();
+		 */
 			 
 			 String actualDownlaodSuccessToast= commons.getToastMSG(driver);
 			 AssertJUnit.assertEquals(actualDownlaodSuccessToast, "File downloaded successfully");

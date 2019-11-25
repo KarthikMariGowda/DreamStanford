@@ -32,6 +32,7 @@ import org.openqa.selenium.WebDriver;
 		public void clickUploads()//always clicks the uploads which is second row in the list
 		{
 			button_Uploads.click();
+			
 		}
 			
 		public void clickDecrypt()

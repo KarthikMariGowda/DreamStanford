@@ -14,6 +14,7 @@ import org.testng.Reporter;
 
 import com.dreamorbit.main.NavigationDrawerPage;
 import com.dreamorbit.pages.LoginPage;
+import com.dreamorbit.pages.ParticipantPage;
 import com.dreamorbit.pages.ResearcherPage;
 import com.dreamorbit.pages.SymmetricKeyPage;
 
@@ -24,12 +25,11 @@ public class Commons implements IAutoConstant
 	public String epochEmail;
 	public String partialEpochEmail;
 	public String nonExistingEmailID;
-	
-	
+
 	BaseTest baseTest = new BaseTest();
-	
-	//Constructor to define epoch time 
-	
+
+	// Constructor to define epoch time
+
 	public Commons() // When ever the Commons constructor is called or object is created a unique
 						// epoch time is generated -CONSTRUCTOR
 	{
@@ -52,13 +52,11 @@ public class Commons implements IAutoConstant
 		epochTime = date.getTime(); // using the date we can get epoch time using getTime();
 	}
 
-	
 	public Long getEpochTime() {
 		return epochTime;
 	}
 
-	
-	//Handling Toasts and Alerts
+	// Handling Toasts and Alerts
 	public String getToastMSG(WebDriver driver) throws InterruptedException {
 		WebElement toastBOX = driver.findElement(By.className("toast-message"));
 		WebDriverWait ewait = new WebDriverWait(driver, 10);
@@ -85,9 +83,9 @@ public class Commons implements IAutoConstant
 
 	}
 
-	
-	
 	// Commonly used Methods
+
+	// Login
 
 	public void login(WebDriver driver) {
 		LoginPage loginPage = new LoginPage(driver);
@@ -97,19 +95,14 @@ public class Commons implements IAutoConstant
 		loginPage.setPWD(pwd);
 		loginPage.clickLogin();
 	}
-	
-	public void addResearcher(WebDriver driver,String Emailid) throws InterruptedException {
+
+	// Adding researcher
+	public void addResearcher(WebDriver driver, String Emailid) throws InterruptedException {
 
 		Commons commons = new Commons();
 		ResearcherPage researcherPage = new ResearcherPage(driver);
-		NavigationDrawerPage navigationDrawerPage = new NavigationDrawerPage(driver);
-		BaseTest baseTest = new BaseTest();
 		SymmetricKeyPage symmetricKeyPage = new SymmetricKeyPage(driver);
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
-		commons.login(driver);
-		commons.studiesScreenWait(driver);
-		navigationDrawerPage.nDResearchersClick();
-		Thread.sleep(4000);
 
 		/*
 		 * int rowCount = baseTest.xl_RowCount(XL_DATA_PATH, "ValidResearcherEmails");
@@ -122,8 +115,6 @@ public class Commons implements IAutoConstant
 
 		researcherPage.addResearcherClick();
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@src='assets/images/ic_save.png']")));
-
-		
 
 		Long epochTime = commons.getEpochTime();// calls getEpochTime() method
 		// Reporter.log(vEmailid.replace("@", epochTime + "@"), true);// replaces @ with
@@ -141,14 +132,44 @@ public class Commons implements IAutoConstant
 		symmetricKeyPage.sK_clickOk();
 		Thread.sleep(5000);
 
-		nonExistingEmailID = baseTest.read_XL_Data(XL_DATA_PATH, "NonExistingResearcherEmail", 1, 0);
+		// nonExistingEmailID = baseTest.read_XL_Data(XL_DATA_PATH,
+		// "NonExistingResearcherEmail", 1, 0);- TO BE CHECKED
 
+	}
+
+//Participant personal info
+	public String decryptPersonalInfo(WebDriver driver) throws InterruptedException {
+		BaseTest baseTest = new BaseTest();
+		ParticipantPage participantPage = new ParticipantPage(driver);
+		SymmetricKeyPage symmetricKeyPage = new SymmetricKeyPage(driver);
+		String validSKEY = baseTest.read_XL_Data(XL_DATA_PATH, "SymmtricKeyValid", 1, 0);
+		Commons commons = new Commons();
+
+		participantPage.personalDecryptClick();
+		symmetricKeyPage.sendSymmetricKey(validSKEY);
+		symmetricKeyPage.sK_clickOk();
+		commons.toastwait(driver);
+		String aPersonalInfoDecrptToast = commons.getToastMSG(driver);
+		return aPersonalInfoDecrptToast;
+	}
+//Second row Json download
+
+	public void downloadJson(WebDriver driver) {
+
+		BaseTest baseTest = new BaseTest();
+		ParticipantPage participantPage = new ParticipantPage(driver);
+		SymmetricKeyPage symmetricKeyPage = new SymmetricKeyPage(driver);
+
+		String validSKEY = baseTest.read_XL_Data(XL_DATA_PATH, "SymmtricKeyValid", 1, 0);
+
+		participantPage.fileJsonClick();
+		symmetricKeyPage.sendSymmetricKey(validSKEY);
+		symmetricKeyPage.sK_clickOk();
 	}
 
 	
 	
-
-
+	
 	// Waits
 
 	public void toastwait(WebDriver driver) {
@@ -176,18 +197,17 @@ public class Commons implements IAutoConstant
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[.='Decrypt']")));
 	}
-	
+
 	public void participantScreenWait(WebDriver driver) {
 
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='View Uploads']")));
 	}
-	
+
 	public void personalInfoScreenWait(WebDriver driver) {
 
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[.='Decrypt']")));
 	}
 
-
-	}
+}
