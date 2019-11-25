@@ -12,6 +12,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ScheduleNotificationPage 
 {
+	//mat-dialog-container[@class='mat-dialog-container ng-tns-c5-8 ng-trigger ng-trigger-slideDialog']
+	@FindBy(xpath= "//mat-dialog-container[@class='mat-dialog-container ng-tns-c5-8 ng-trigger ng-trigger-slideDialog']")// Declaration
+	private WebElement AlertBox;
 	
 	@FindBy(xpath= "//mat-dialog-content/div/div[1]/mat-form-field/div/div[1]/div/mat-select/div/div[1]")// Declaration
 	private WebElement activity;
@@ -87,12 +90,27 @@ public class ScheduleNotificationPage
 	
 	public void CancelSNclick()
 	{
-		sNsaveBTN.click();
+		sNcancelBTN.click();
 	}
 	
+	
+		public boolean isSavedisplayed() 
+		{ 
+		    try 
+		    { 
+		    	sNsaveBTN.isDisplayed();
+		        return true; 
+		    }   
+		    catch (Exception $e) //global handler
+		    { 
+		        return false; 
+		    }   // catch 
+		}   // isAlertPresent()
+	
+	}
 
 	
 	
 	
 	
-}
+

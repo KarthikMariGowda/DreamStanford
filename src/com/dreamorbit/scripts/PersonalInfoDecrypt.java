@@ -171,7 +171,7 @@ public class PersonalInfoDecrypt extends BaseTest
 
 {
 	@Test(priority = 21, enabled = false)
-	public void jsonDownloadCheck() throws InterruptedException {
+	public void TestpersonalInfoDecrypt() throws InterruptedException {
 
 		Commons commons = new Commons();
 
@@ -205,9 +205,10 @@ public class PersonalInfoDecrypt extends BaseTest
 			participantPage.personalTabClick();
 			commons.personalInfoScreenWait(driver);
 			Thread.sleep(5000);
+			
 			String aPersonalInfoDecrptToast = commons.decryptPersonalInfo(driver);
 			AssertJUnit.assertEquals(aPersonalInfoDecrptToast, "Data Decrypted successfully");
-			Reporter.log("Personal info decrypt through " + uploadsCount + " uploads testcase via  is passed", true);
+			Reporter.log("Personal info decrypt via " + uploadsCount + " uploads testcase is passed", true);
 		}
 
 		/*

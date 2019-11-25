@@ -3,11 +3,13 @@ package com.dreamorbit.generic;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
@@ -96,14 +98,15 @@ public class Commons implements IAutoConstant
 		loginPage.clickLogin();
 	}
 
-	// Adding researcher
-	public void addResearcher(WebDriver driver, String Emailid) throws InterruptedException {
+	// Adding researcher with and without session kety saved
+	public void addResearcher(WebDriver driver, String Emailid, boolean key) throws InterruptedException {
 
 		Commons commons = new Commons();
 		ResearcherPage researcherPage = new ResearcherPage(driver);
 		SymmetricKeyPage symmetricKeyPage = new SymmetricKeyPage(driver);
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
-
+		
+ if(key== false) {
 		/*
 		 * int rowCount = baseTest.xl_RowCount(XL_DATA_PATH, "ValidResearcherEmails");
 		 * Reporter.log("RowCount=" + rowCount, true); for (int i = 1; i <= rowCount;
@@ -127,6 +130,7 @@ public class Commons implements IAutoConstant
 		partialEpochEmail = epochEmail.replace("+" + epochTime + "@gmail.com", "");
 
 		researcherPage.tickButtonClick();
+		
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.id("swalSymmetricKey")));
 		symmetricKeyPage.sendSymmetricKey(sKey);
 		symmetricKeyPage.sK_clickOk();
@@ -135,6 +139,27 @@ public class Commons implements IAutoConstant
 		// nonExistingEmailID = baseTest.read_XL_Data(XL_DATA_PATH,
 		// "NonExistingResearcherEmail", 1, 0);- TO BE CHECKED
 
+	}
+ else
+ {
+	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		commons.researchersScreenWait(driver);
+
+		researcherPage.addResearcherClick();
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@src='assets/images/ic_save.png']")));
+
+		Long epochTime = commons.getEpochTime();// calls getEpochTime() method
+		// Reporter.log(vEmailid.replace("@", epochTime + "@"), true);// replaces @ with
+		// epoch time and then appends @
+		epochEmail = Emailid.replace("@", "+" + epochTime + "@");
+		researcherPage.setEmailAddress(epochEmail);// replaces @ with epoch time
+													// appends "+" before epoch time
+													// example-
+													// karthik.m+11454544@dreamorbit.com
+		partialEpochEmail = epochEmail.replace("+" + epochTime + "@gmail.com", "");
+
+		researcherPage.tickButtonClick();
+ }
 	}
 
 //Participant personal info
@@ -154,20 +179,88 @@ public class Commons implements IAutoConstant
 	}
 //Second row Json download
 
-	public void downloadJson(WebDriver driver) {
-
+	public void downloadJson(WebDriver driver,boolean key)
+	{
 		BaseTest baseTest = new BaseTest();
 		ParticipantPage participantPage = new ParticipantPage(driver);
 		SymmetricKeyPage symmetricKeyPage = new SymmetricKeyPage(driver);
-
 		String validSKEY = baseTest.read_XL_Data(XL_DATA_PATH, "SymmtricKeyValid", 1, 0);
+		
+if (key==false)
+{
+		
 
 		participantPage.fileJsonClick();
 		symmetricKeyPage.sendSymmetricKey(validSKEY);
 		symmetricKeyPage.sK_clickOk();
+}
+else
+{
+	
+	participantPage.fileJsonClick();
+	symmetricKeyPage.sendSymmetricKey(validSKEY);
+	symmetricKeyPage.clickSaveKeyChkBox();
+	symmetricKeyPage.sK_clickOk();
+}
 	}
 
+//	
 	
+//Activity Selection- 
+	public void selectActivity(WebDriver driver)
+	{
+	List<WebElement> activityMenu = driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
+
+	for (int i = 0; i < activityMenu.size(); i++) {
+		System.out.println(activityMenu.size());
+
+		WebElement aOption = activityMenu.get(i);
+		String innerhtml = aOption.getAttribute("innerHTML");
+
+		if (innerhtml.contains("6 Minute Walk Test")) {
+			aOption.click();
+			break;
+		}
+	}
+	}
+	
+//Schedule Activity-
+	public void setSchedule(WebDriver driver,String schedule)
+	{
+	List<WebElement> scheduleMenu = driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
+
+	for (int i = 0; i < scheduleMenu.size(); i++) {
+
+		WebElement sOption = scheduleMenu.get(i);
+		String innerhtml = sOption.getAttribute("innerHTML");
+
+		if (innerhtml.contains(schedule)) {
+			Actions actions = new Actions(driver);
+			actions.moveToElement(sOption).click().build().perform(); // sOption.click();
+			break;
+
+		}
+
+	}
+	}
+	
+	//Selecting day
+	public void setDay(WebDriver driver,String day)
+	{
+	List<WebElement> daysMenu = driver.findElements(By.xpath("//span[contains(@class,'mat-option-text')]"));
+	for (int i = 0; i < daysMenu.size(); i++) {
+
+		WebElement dOption = daysMenu.get(i);
+		String innerhtml = dOption.getAttribute("innerHTML");
+
+		if (innerhtml.contains(day)) {
+			dOption.click();
+			break;
+
+		}
+
+	}
+	}
 	
 	
 	// Waits

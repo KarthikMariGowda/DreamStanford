@@ -59,4 +59,9 @@ public class SymmetricKeyPage {
 	{
 		copyNDeliverBTN.click();
 	}
+	
+	public void clickSaveKeyChkBox()
+	{
+		checkBox_saveSession.click();
+	}
 }

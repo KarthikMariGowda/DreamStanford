@@ -217,7 +217,7 @@ public class JsonDownloadValidSkey extends BaseTest
 			 Thread.sleep(3000);
 			 participantListPage.clickUploads();
 			 Thread.sleep(2000); 
-			 commons.downloadJson(driver);
+			 commons.downloadJson(driver,false);
 		/*
 		 * participantPage.fileJsonClick();
 		 * symmetricKeyPage.sendSymmetricKey(validSKEY); symmetricKeyPage.sK_clickOk();

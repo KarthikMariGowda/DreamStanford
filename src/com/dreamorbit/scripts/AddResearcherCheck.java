@@ -158,7 +158,7 @@ public class AddResearcherCheck extends BaseTest {
 		navigationDrawerPage.nDResearchersClick();
 		Thread.sleep(4000);
 		
-		commons.addResearcher(driver,vEmailid);
+		commons.addResearcher(driver,vEmailid,false);
 		Thread.sleep(2000);
 		commons.toastwait(driver);
 		String aResearcheraddedSucessMSG = commons.getToastMSG(driver);

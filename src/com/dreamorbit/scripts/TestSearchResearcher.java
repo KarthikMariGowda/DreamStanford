@@ -379,7 +379,7 @@ public class TestSearchResearcher extends BaseTest {
 		SearchFieldPage searchFieldPage = new SearchFieldPage(driver);
 
 		try {
-			commons.addResearcher(driver,vEmailid);
+			commons.addResearcher(driver,vEmailid,false);
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

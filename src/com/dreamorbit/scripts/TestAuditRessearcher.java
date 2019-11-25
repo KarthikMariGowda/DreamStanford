@@ -38,7 +38,7 @@ public class TestAuditRessearcher extends BaseTest
 		Thread.sleep(4000);
 
 		String vEmailid = read_XL_Data(XL_DATA_PATH, "ValidResearcherEmails", 1, 0);
-		commons.addResearcher(driver, vEmailid);
+		commons.addResearcher(driver, vEmailid,false);
 		commons.toastwait(driver);
 		symmetricKeyPage.copyNDeliverBTNClick();
 		commons.toastwait(driver);
