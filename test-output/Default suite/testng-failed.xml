@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dreamorbit.scripts.VerifySaveKeyForSession">
+      <class name="com.dreamorbit.scripts.Reader">
         <methods>
-          <include name="testSaveSessionKey"/>
           <include name="closeApp"/>
+          <include name="readingJSON"/>
           <include name="launchAPP"/>
         </methods>
-      </class> <!-- com.dreamorbit.scripts.VerifySaveKeyForSession -->
+      </class> <!-- com.dreamorbit.scripts.Reader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -180,6 +180,36 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.AssertJUnit;
@@ -196,7 +226,7 @@ import com.dreamorbit.pages.SymmetricKeyPage;
 public class JsonDownloadValidSkey extends BaseTest
 
 {
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void jsonDownloadCheck()  throws InterruptedException 
 	{
 		
@@ -206,7 +236,6 @@ public class JsonDownloadValidSkey extends BaseTest
 		LabelPage studypage= new LabelPage(driver);
 		ParticipantListPage participantListPage = new ParticipantListPage(driver);
 	
-		
 		
 		
 			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

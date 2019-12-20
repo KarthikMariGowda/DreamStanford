@@ -24,6 +24,8 @@ public interface IAutoConstant {
 		long ITO=15;
 		long ETO=20;
 		
+		String sjsonPath= "./lib/CurrentTime.json";
+		String ajsonPath= "./lib/Pedometer.json";
 		
 
 	

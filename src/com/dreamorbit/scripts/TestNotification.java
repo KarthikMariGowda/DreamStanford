@@ -10,53 +10,8 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
 import java.awt.AWTException;
-import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.AssertJUnit;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -68,8 +23,8 @@ import com.dreamorbit.pages.StudiesPage;
 
 public class TestNotification extends BaseTest {
 
-	@Test(priority = 23, enabled = false)
-	public void setNotificationDaily() throws InterruptedException, AWTException {
+	@Test(priority = 23, enabled = true)
+	public void setNotification() throws InterruptedException, AWTException {
 		Commons commons = new Commons();
 		StudiesPage studiesPage = new StudiesPage(driver);
 		ScheduleNotificationPage scheduleNotificationPage = new ScheduleNotificationPage(driver);
@@ -125,7 +80,7 @@ public class TestNotification extends BaseTest {
 			Reporter.log("Notification updating for Daily schedule-Test case Failed", true);
 			AssertJUnit.fail();
 		}
-		
+		Thread.sleep(4000);
 		studiesPage.scheduleNotificationBTNClick();
 		Thread.sleep(3000);
 		scheduleNotificationPage.activityDropDownClick();

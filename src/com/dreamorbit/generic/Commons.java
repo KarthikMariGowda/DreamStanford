@@ -136,8 +136,7 @@ public class Commons implements IAutoConstant
 		symmetricKeyPage.sK_clickOk();
 		Thread.sleep(5000);
 
-		// nonExistingEmailID = baseTest.read_XL_Data(XL_DATA_PATH,
-		// "NonExistingResearcherEmail", 1, 0);- TO BE CHECKED
+		nonExistingEmailID = baseTest.read_XL_Data(XL_DATA_PATH,"NonExistingResearcherEmail", 1, 0);
 
 	}
  else
@@ -170,6 +169,7 @@ public class Commons implements IAutoConstant
 		String validSKEY = baseTest.read_XL_Data(XL_DATA_PATH, "SymmtricKeyValid", 1, 0);
 		Commons commons = new Commons();
 
+		Thread.sleep(3000);
 		participantPage.personalDecryptClick();
 		symmetricKeyPage.sendSymmetricKey(validSKEY);
 		symmetricKeyPage.sK_clickOk();
@@ -274,9 +274,9 @@ else
 
 	public void studiesScreenWait(WebDriver driver) {
 
-		String VerifytokenLoc = "//*[@id=\"page-wrapper\"]/div/div[2]/div/div/app-studies/div[2]/div/table/tbody/tr/td[5]/ui-switch/span";
+		String NotificationButton = "//button[.='Schedule Notification']";
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
-		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(VerifytokenLoc)));
+		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(NotificationButton)));
 	}
 
 	public void researchersScreenWait(WebDriver driver) {
@@ -301,6 +301,13 @@ else
 
 		WebDriverWait ewait = new WebDriverWait(driver, ETO);
 		ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[.='Decrypt']")));
+	}
+	
+	public void fPsubmitBTNWait(WebDriver driver) {
+
+		
+		WebDriverWait ewait = new WebDriverWait(driver, ETO);
+		ewait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
 	}
 
 }

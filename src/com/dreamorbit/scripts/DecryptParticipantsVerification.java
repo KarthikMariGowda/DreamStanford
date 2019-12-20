@@ -1,5 +1,45 @@
 package com.dreamorbit.scripts;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.Reporter;
@@ -15,7 +55,7 @@ import com.dreamorbit.pages.SymmetricKeyPage;
 public class DecryptParticipantsVerification extends BaseTest
 {
 	
-	@Test(priority = 19, enabled = false)
+	@Test(priority = 19, enabled = true)
 	public void testDecryptParticipants() throws InterruptedException
 	{
 		Commons commons = new Commons();
@@ -31,10 +71,10 @@ public class DecryptParticipantsVerification extends BaseTest
 		
 		try {
 			AssertJUnit.assertEquals(aPPUrl, ParticipantUrl);
-			Reporter.log("Participants Link Navigation under Actions testcase is  passed",true);
+			Reporter.log("Participants Link Navigation under Actions - Testcase is  passed",true);
 		} 
 		catch (AssertionError e) {
-			Reporter.log("Participants Link Navigation under Actions testcase is  failed"+"Actual URL" +aPPUrl+ "," + "Expected URL"+ ParticipantUrl, true);
+			Reporter.log("Participants Link Navigation under Actions Testcase is  failed"+"Actual URL" +aPPUrl+ "," + "Expected URL"+ ParticipantUrl, true);
 			Assert.fail();
 		}
 		
@@ -45,19 +85,19 @@ public class DecryptParticipantsVerification extends BaseTest
 		 String aDecryptedSuccessToast= commons.getToastMSG(driver);
 		 try {
 			AssertJUnit.assertEquals(aDecryptedSuccessToast, "Data Decrypted successfully");
-			 Reporter.log("Decrypt Participants in list testcase with valid symmetric key is Passed",true);
+			 Reporter.log("Decrypt Participants in list with valid symmetric key -Testcase is Passed",true);
 		} catch (Exception e) {
-			Reporter.log("Decrypt Participants in list testcase with valid symmetric key is Failed",true);
+			Reporter.log("Decrypt Participants in list with valid symmetric key -Testcase is Failed",true);
 			Assert.fail();
 		}
 		 
 		 
 			try {
 				AssertJUnit.assertFalse(participantListPage.isDecrptBTNEnabled());
-				Reporter.log("Decrypt Participants button is Disabled, testcase is Passed",true);
+				Reporter.log("Decrypt Participants button is Disabled after the decryption is done, Testcase is Passed",true);
 			} 
 			catch (AssertionError e) {
-				Reporter.log("Decrypt Participants button is enabled, testcase is failed", true);
+				Reporter.log("Decrypt Participants button is still enabled after the decryption of the participant list , Testcase is failed", true);
 				Assert.fail();
 			}
 			

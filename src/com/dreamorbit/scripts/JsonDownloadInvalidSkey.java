@@ -176,6 +176,36 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.AssertJUnit;
@@ -192,7 +222,7 @@ import com.dreamorbit.pages.SymmetricKeyPage;
 public class JsonDownloadInvalidSkey extends BaseTest
 
 {
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void jsonDownloadInvalidSkey() throws InterruptedException {
 
 		Commons commons = new Commons();
@@ -204,7 +234,7 @@ public class JsonDownloadInvalidSkey extends BaseTest
 		ParticipantPage participantPage = new ParticipantPage(driver);
 
 		int rowCnt = baseTest.xl_RowCount(XL_DATA_PATH, "SymmtricKeyInvalid");
-		Reporter.log("invalidkey input counts =" + rowCnt, true);
+		//Reporter.log("invalidkey input counts =" + rowCnt, true);
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		commons.login(driver);
@@ -230,7 +260,7 @@ public class JsonDownloadInvalidSkey extends BaseTest
 
 	}
 
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void jsonDownloadIncorrectSkey() throws InterruptedException {
 		Commons commons = new Commons();
 		BaseTest baseTest = new BaseTest();

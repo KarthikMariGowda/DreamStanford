@@ -32,8 +32,14 @@ public void sendEmail(String testEmails)
 	EmailField.sendKeys(testEmails);
 }
 
+public void clearEmail()
+{
+	EmailField.clear();
+}
+
 public void FpSubmitClick()
 {
+	
 	FpSubmit.click();
 }
 

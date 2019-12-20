@@ -8,8 +8,8 @@ import org.openqa.selenium.WebDriver;
 	public class ParticipantListPage
 	{
 		//Declaration
-		@FindBy(xpath= "//th[.='No.']/ancestor::table/tbody[1]/tr[2]/td[4]/a[@class='text-upload']")
-		private WebElement button_Uploads;//for second top most uploads button
+		@FindBy(xpath= "//th[.='No.']/ancestor::table/tbody[1]/tr[2]/td[4]/a[@class='text-upload']")//th[.='No.']/ancestor::table/tbody[1]/tr[3]/td[4]/a[@class='text-upload']-- for 3rd top most uploads button
+		private WebElement button_Uploads;//for 2nd top most uploads button
 		
 		@FindBy(xpath= "//button[.='Decrypt']")
 		private WebElement button_Decrypt;

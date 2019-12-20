@@ -3,13 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dreamorbit.scripts.TestStar">
+      <class name="com.dreamorbit.scripts.TestUserRating">
         <methods>
           <include name="closeApp"/>
           <include name="launchAPP"/>
-          <include name="navigationFlowCheck"/>
+          <include name="ratingAvgCheck"/>
         </methods>
-      </class> <!-- com.dreamorbit.scripts.TestStar -->
+      </class> <!-- com.dreamorbit.scripts.TestUserRating -->
+      <class name="com.dreamorbit.scripts.VerifySaveKeyForSession">
+        <methods>
+          <include name="testSaveSessionKey"/>
+          <include name="closeApp"/>
+          <include name="launchAPP"/>
+        </methods>
+      </class> <!-- com.dreamorbit.scripts.VerifySaveKeyForSession -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,5 +1,42 @@
 package com.dreamorbit.scripts;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 //Togle, loggedout,reset password isnot captured in Audit- issue
 import org.testng.Assert;
 import org.testng.AssertJUnit;
@@ -18,7 +55,7 @@ import com.dreamorbit.pages.SymmetricKeyPage;
 public class TestAuditRessearcher extends BaseTest
 
 {
-	@Test(priority = 26, enabled = false)
+	@Test(priority = 26, enabled = true)
 
 	public void auditRessearcherVerification() throws InterruptedException {
 		Commons commons = new Commons();
@@ -77,7 +114,7 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("File download activity under Audit recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("File download activity under Audit is not recorded- testcase failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 
 			try {
@@ -85,7 +122,7 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("Viewed Participant Uploads activity under Audit recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Viewed Participant Uploads activity under Audit is not recorded- testcase failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 
 			}
 
@@ -94,7 +131,7 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("Added new Researcher activity under Audit recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Added new Researcher activity under Audit  not recorded- testcase failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 
 			try {
@@ -102,7 +139,7 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("Researcher Login activity under Audit is recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Researcher Login activity under Audit is not recorded", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 
 		}
@@ -135,14 +172,14 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("Viewed Participant Details under Audit recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Viewed Participant Details under Audit is not recorded- testcase failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 			try {
 				AssertJUnit.assertTrue(aSecondRowAction.contains("Viewed Participant Uploads"));
 				Reporter.log("Viewed Participant Uploads under Audit recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Viewed Participant Uploads under Audit is not recorded- testcase failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 
 			try {
@@ -150,7 +187,7 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("Viewed Participant Listing activity under Audit recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Viewed Participant Listing activity under Audit is not recorded- testcase failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 
 			}
 
@@ -159,7 +196,7 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("Added new Researcher activity under Audit recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Added new Researcher activity under Audit  not recorded- testcase failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 
 			try {
@@ -167,7 +204,7 @@ public class TestAuditRessearcher extends BaseTest
 				Reporter.log("Researcher Login activity under Audit is recorded- testcase passed", true);
 			} catch (AssertionError e) {
 				Reporter.log("Researcher Login activity under Audit is not recorded", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 
 		}
