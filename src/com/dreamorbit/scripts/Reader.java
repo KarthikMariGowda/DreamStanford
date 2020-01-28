@@ -29,6 +29,8 @@ import org.testng.annotations.Test;
 import com.dreamorbit.generic.BaseTest;
 
 public class Reader extends BaseTest {
+	
+
 	boolean isFound;
 
 	public String unzippedlatestFilePath;
@@ -39,6 +41,7 @@ public class Reader extends BaseTest {
 
 		JsonDownloadValidSkey jsonDownloadValidSkey = new JsonDownloadValidSkey();
 		jsonDownloadValidSkey.jsonDownloadCheck();
+		Thread.sleep(6000);
 
 //TO READ THE LATEST DOWNLOADED FILE Path
 		Path dir = Paths.get("C://Users/karthik.m/Downloads/"); // specify your directory
@@ -57,39 +60,84 @@ public class Reader extends BaseTest {
 			unzippedlatestFilePath = "C://Users/karthik.m/Downloads/latestdownload";
 			unzip(latestModifiedPath, unzippedlatestFilePath);
 			File folder = new File(unzippedlatestFilePath);
-			// System.out.println("File folder >> " + folder.toString());
+			//Reporter.log("File folder >> " + folder.toString(), true);
 			List<String> list = new ArrayList<>();
 			List<String> listOfFilesArray = new ArrayList<>(Arrays.asList("CurrentTime.json", "DeviceMotion.json",
 					"discardReason.json", "Location.json", "Pedometer.json", "StepCountOfDay.json", "Summary.json",
 					"SurveyResponse.json", "Weather.json"));
-
+			
+			
+			
+			for (File file : folder.listFiles()) 
+			{
+				
+				String afn = file.getName();
+				list.add(afn); // adds strings to the list
+				continue;
+			}
+			
+		isArrayEqual(listOfFilesArray, list);
+	
+	
+	
+			
+			
+				
+					
 			for (File file : folder.listFiles()) {
 				String apath = file.getAbsolutePath();
 				String afn = file.getName();
+				
+				
+				//Reporter.log(apath,true);
+				
+				if (afn.equals("CurrentTime.json"))
 
-				System.out.println(apath);
-				if(afn.equals("CurrentTime.json"))
 				{
-					readingjSON(apath);
+					readingcurrentTimejSON(apath);
 				}
-				else
-				{
-					readingArrayjSONS(apath);
+				
+				else if (afn.equals("DeviceMotion.json")) {
+					readingdeviceMotioninfo(apath);
+				}
+				
+				else if (afn.equals("Pedometer.json")) {
+					readingPedometerinfo(apath);
+				}
+				
+				else if (afn.equals("discardReason.json")) {
+					readingdiscardReasonjSONS(apath);
+				}
+
+				else if (afn.equals("StepCountOfDay.json")) {
+					readingTotalStepCountOfDayjSONS(apath);
+				}
+				
+				else if (afn.equals("Summary.json")) {
+					readingArraySummaryjSONS(apath);
+				}
+				
+				else if (afn.equals("SurveyResponse.json")) {
+					readingArraySurveyResponsejSONS(apath);
+				}
+				
+				else if (afn.equals("Weather.json")) {
+					readingArrayWeatherjSONS(apath);
 				}
 				
 
-				list.add(afn); // adds strings to the list
-
-				continue;
+				else if (afn.equals("Location.json"))
+				{
+					readingLocationjSONS(apath);
+				}
 
 			}
 
-			isArrayEqual(listOfFilesArray, list);
-
-		} else {
-			Reporter.log("File download is failed -Test case failed");
 		}
-	}
+		}
+		
+		
+	
 
 	private void isArrayEqual(List<String> listOfFilesArray, List<String> list) {
 
@@ -98,7 +146,7 @@ public class Reader extends BaseTest {
 
 		boolean isEqual = listOfFilesArray.equals(list);
 		if (isEqual == true) {
-			System.out.println("Test case passed -All the json files are downloaded successfully");
+			System.out.println("All the json files are downloaded successfully -Test case passed ");
 		} else {
 			listOfFilesArray.removeAll(list);
 
@@ -166,34 +214,299 @@ public class Reader extends BaseTest {
 
 	}
 
-	private void readingArrayjSONS(String apath) throws IOException, ParseException {
+	//1 readingcurrentTimejSON
+	
+	private void readingcurrentTimejSON(String apath) throws IOException, ParseException {
 
 		JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate
 		FileReader ojsonfile = new FileReader(apath);// to read json file
 		Object readableJson = jsonParser.parse(ojsonfile);
 		JSONObject jsonObject = (JSONObject) readableJson;
-		JSONArray arrayItems = (JSONArray) jsonObject.get("items");
-		System.out.println("OUTPUT" + arrayItems.toJSONString());
+		boolean currentTime = (boolean) jsonObject.containsKey("currentTime");
+		if (currentTime == true) {
+			Reporter.log("Current Time is available- Test case passed for current Time Json", true);
+		} else {
+			Reporter.log("Current Time is not available- Test case Failed for current Time Json", true);
+		}
+		
 
-		Iterator iterator = arrayItems.iterator();
-		while (iterator.hasNext()) {
-			System.out.println(iterator.next());
+	}
+
+	//2.readingdiscardReasonjSONS
+	
+	private void readingdiscardReasonjSONS(String apath) throws IOException, ParseException {
+
+		JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate
+		FileReader ojsonfile = new FileReader(apath);// to read json file
+		Object readableJson = jsonParser.parse(ojsonfile);
+		JSONObject jsonObject = (JSONObject) readableJson;
+	
+		boolean discardReason = (boolean) jsonObject.containsKey("discardReason");
+		if (discardReason == true) {
+			Reporter.log("discardReason is available- Test case passed for discardReason Json", true);
+		} else {
+			Reporter.log("discardReason is not available- Test case Failed for discardReason Json", true);
 		}
 
 	}
+
 	
+	//3.Reading device motion info
 	
-		private void readingjSON(String apath) throws IOException, ParseException {
+	private void readingdeviceMotioninfo(String apath) throws IOException, ParseException {
+
+		JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate
+		FileReader ojsonfile = new FileReader(apath);// to read json file
+		Object readableJson = jsonParser.parse(ojsonfile);
+		JSONObject jsonObject = (JSONObject) readableJson;
+		
+		boolean deviceMotioninfo = (boolean) jsonObject.containsKey("items");
+		if (deviceMotioninfo == true) {
+			Reporter.log("deviceMotioninfo is available- Test case passed for deviceMotion Json", true);
+		} else {
+			Reporter.log("deviceMotioninfo is not available- Test case Failed for deviceMotion Json", true);
+		}
+	}
+
+	//4.Reading Total Steps
+	
+	private void readingTotalStepCountOfDayjSONS(String apath) throws IOException, ParseException {
+
+		JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate
+		FileReader ojsonfile = new FileReader(apath);// to read json file
+		Object readableJson = jsonParser.parse(ojsonfile);
+		JSONObject jsonObject = (JSONObject) readableJson;
+		
+		boolean totalStepsInDay = (boolean) jsonObject.containsKey("totalStepsInDay");
+		if (totalStepsInDay == true) {
+			Reporter.log("totalStepsInDay is available- Test case passed for TotalStepCountOfDay Json",
+					true);
+		} else {
+			Reporter.log("totalStepsInDay is not available- Test case Failed for TotalStepCountOfDay Json",
+					true);
+		}
+
+	}
+
+	//5.Reading location
+	
+	private void readingLocationjSONS(String apath) throws IOException, ParseException {
+
+		JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate
+		FileReader ojsonfile = new FileReader(apath);// to read json file
+		Object readableJson = jsonParser.parse(ojsonfile);
+		
+		JSONObject jsonObject = (JSONObject) readableJson;
+		
+		
+		if(jsonObject.containsKey("Items"))
+		{
+			Reporter.log("Items are available under location JSON -Location Json level 1 test case passed");
+			
+			JSONArray items = (JSONArray) jsonObject.get("items");
+			boolean isValid = (boolean) true; 
+			
+			Iterator iterator = items.iterator(); 
+			while (isValid && iterator.hasNext()) {
+				JSONObject currentObj = (JSONObject) iterator.next();// To read using iterator -1. Create an object call iterator method 2.while hasNext() 3.next() to read
+				isValid = currentObj.containsKey("altitude") && 
+						currentObj.containsKey("coordinate") &&
+						currentObj.containsKey("course") &&
+						currentObj.containsKey("horizontalAccuracy") &&
+						currentObj.containsKey("speed") && 
+						currentObj.containsKey("timestamp") && 
+						currentObj.containsKey("verticalAccuracy"); 
+				
+				JSONObject coordinateObj = (JSONObject) currentObj.get("coordinate");
+				
+				isValid = coordinateObj.containsKey("latitude") &&
+						coordinateObj.containsKey("additionalProperties") && 
+						coordinateObj.containsKey("longitude");
+//						currentObj.containsKey("verticalAccuracyKarthik") 
+						
+
+			}
+			
+			
+
+			if(isValid==true)
+			{
+				Reporter.log("Location JSON contains all the required keys- test case passed ", true);
+			}
+			else
+			{
+				Reporter.log("Location JSON does not contains all the required keys for Items- test case Failed ", true);
+			}
+			
+
+		
+		}
+		else
+		{
+			Reporter.log("Items are not available under location json -Location Json level 1 test case Failed");
+		}
+		
+	}
+
+	//	System.out.println(items);// overrides to sting method and hence output will not be refrence instaed it prints the values with [] appended 
+		
+		
+//6. Reading Summary JSON
+	
+	  private void readingArraySummaryjSONS(String apath) throws IOException,ParseException { 
+	  
+	  JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate 
+	  FileReader ojsonfile = new FileReader(apath);// to read json file
+	   Object readableJson = jsonParser.parse(ojsonfile);
+	   JSONArray jsonArrayData= (JSONArray) readableJson;
+		boolean isValid = (boolean) true;
+	   
+	   Iterator itr = jsonArrayData.iterator();
+	   
+	   while(isValid && itr.hasNext())
+	   {
+		   JSONObject currentObj = (JSONObject) itr.next();// To read using iterator -1. Create an object call iterator method 2.while hasNext() 3.next() to read
+	   
+		   isValid =  currentObj.containsKey("average_heart_rate")
+	  && currentObj.containsKey("distance")&&
+	  currentObj.containsKey("duration_of_test")&& currentObj.containsKey("id")&&
+	  currentObj.containsKey("max_heart_rate")&&
+	  currentObj.containsKey("steps_count")&&
+	  currentObj.containsKey("test_taken_at")&&
+	  currentObj.containsKey("total_floor_ascended") ;
+	  
+	  
+		if(isValid==true)
+		{
+			Reporter.log("All the Summary Informations are available- Test case passed for Summary Json",true);
+			break;
+		}
+		else
+		{
+			Reporter.log("Summary Informations are not available- Test case Failed for Summary Json", true);
+		}
+	 
+	  
+	  
+	  }
+	 
+	  }
+	  //7. Reading Survey response
+	  
+	  private void readingArraySurveyResponsejSONS(String apath) throws IOException,ParseException { 
+		  
+	  JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate 
+	  FileReader ojsonfile = new FileReader(apath);// to read json file
+	   Object readableJson = jsonParser.parse(ojsonfile);
+	   JSONArray jsonArrayData= (JSONArray) readableJson;
+	   
+	  boolean isvalid= (boolean)true;
+	  
+	   Iterator itr= jsonArrayData.iterator();
+	   
+	  while (isvalid && itr.hasNext()) {
+		  JSONObject currentObj = (JSONObject) itr.next();
+	 
+		  isvalid= currentObj.containsKey("answers")
+	  && currentObj.containsKey("date")&&
+	  currentObj.containsKey("questions");
+	  
+	  if(isvalid==true)
+	  {
+	  Reporter.log("All the Survey Informations are available- Test case passed for Survey Json",true);
+	  break;
+	  } 
+	  else 
+	  { Reporter.log(
+	  "Survey Informations are not available- Test case Failed for Survey Json"
+	  ,true); 
+	  }
+	  }
+	  }
+	  
+	  //8. Reading Weather JSON
+	  
+	  private void readingArrayWeatherjSONS(String apath) throws IOException,ParseException { 
+		  
+	  JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate 
+	  FileReader ojsonfile = new FileReader(apath);// to read json file
+	   Object readableJson = jsonParser.parse(ojsonfile);
+	   JSONObject wtrJsonObject= (JSONObject) readableJson;
+	  
+
+	  
+	  boolean weatherInfo = (boolean) wtrJsonObject.containsKey("base")
+	  && wtrJsonObject.containsKey("clouds")&&
+	  wtrJsonObject.containsKey("cod")&& wtrJsonObject.containsKey("id")&&
+	  wtrJsonObject.containsKey("coord")&&
+	  wtrJsonObject.containsKey("dt")&&
+	  wtrJsonObject.containsKey("id")&&
+	  wtrJsonObject.containsKey("main")&&
+	  wtrJsonObject.containsKey("name")&&
+	  wtrJsonObject.containsKey("sys")&&
+	  wtrJsonObject.containsKey("weather")&&
+	  wtrJsonObject.containsKey("wind");
+	  
+	  if(weatherInfo==true)
+	  {
+	  Reporter.log("All the Weather Informations are available- Test case passed for weather Json",true);
+	  } 
+	  else { Reporter.log(
+	  "Weather Informations are not available- Test case Failed for Weather Json"
+	  ,true); 
+	  }
+	  
+	  }
+	  
+	  
+	  //9.Reading pedometer info
+	  
+	  private void readingPedometerinfo(String apath) throws IOException, ParseException {
 
 			JSONParser jsonParser = new JSONParser();// to parse the readed file in order to translate
 			FileReader ojsonfile = new FileReader(apath);// to read json file
 			Object readableJson = jsonParser.parse(ojsonfile);
+			
 			JSONObject jsonObject = (JSONObject) readableJson;
-			String currentTime = (String) jsonObject.get("currentTime");
-			System.out.println("OUTPUT " + currentTime);
-	}
+		boolean ItemsExist=	jsonObject.containsKey("Items");
+			
+			if(ItemsExist==true)
+			{
+				Reporter.log("Items keys is present in JSON",true);
+			}
+		 
+			JSONArray items = (JSONArray) jsonObject.get("items");
+			
+			boolean isValid = (boolean) true; 
+			
+			Iterator iterator = items.iterator(); 
+			while (isValid && iterator.hasNext()) {
+				JSONObject currentObj = (JSONObject) iterator.next();// To read using iterator -1. Create an object call iterator method 2.while hasNext() 3.next() to read
+				isValid = currentObj.containsKey("distance") && 
+						currentObj.containsKey("endDate") &&
+						currentObj.containsKey("floorsAscended") &&
+						currentObj.containsKey("floorsDescended") &&
+						currentObj.containsKey("numberOfSteps") && 
+						currentObj.containsKey("startDate"); 
+						
+
+			}
+			
+
+					
+			if(isValid==true)
+			{
+				Reporter.log("Pedometer JSON contains all the required keys- test case passed ", true);
+			}
+			else
+			{
+				Reporter.log("Pedometer JSON does not contains all the required keys for Items- test case Failed ", true);
+			}
+			}
+		
 
 }
+
 
 //THE BELOW ONE IS USING ARRAY, THE ABOVE ONE IS USING LIST_COLLECTIONS
 /*

@@ -1,63 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Json Download testcase with valid symmetric key is passed]]>
     </line>
+    <line>
+      <![CDATA[Current Time is available- Test case passed for current Time Json]]>
+    </line>
+    <line>
+      <![CDATA[deviceMotioninfo is available- Test case passed for deviceMotion Json]]>
+    </line>
+    <line>
+      <![CDATA[discardReason is available- Test case passed for discardReason Json]]>
+    </line>
+    <line>
+      <![CDATA[Items are not available under location json -Location Json level 1 test case Failed]]>
+    </line>
+    <line>
+      <![CDATA[Pedometer JSON contains all the required keys- test case passed ]]>
+    </line>
+    <line>
+      <![CDATA[totalStepsInDay is available- Test case passed for TotalStepCountOfDay Json]]>
+    </line>
+    <line>
+      <![CDATA[All the Summary Informations are available- Test case passed for Summary Json]]>
+    </line>
+    <line>
+      <![CDATA[All the Survey Informations are available- Test case passed for Survey Json]]>
+    </line>
+    <line>
+      <![CDATA[All the Weather Informations are available- Test case passed for weather Json]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29944" started-at="2020-01-14T17:35:08 IST" finished-at="2020-01-14T17:35:38 IST">
+  <suite name="Default suite" duration-ms="34592" started-at="2020-01-28T16:41:44 IST" finished-at="2020-01-28T16:42:18 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29944" started-at="2020-01-14T17:35:08 IST" finished-at="2020-01-14T17:35:38 IST">
+    <test name="Default test" duration-ms="34592" started-at="2020-01-28T16:41:44 IST" finished-at="2020-01-28T16:42:18 IST">
       <class name="com.dreamorbit.scripts.Reader">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.Reader@49fc609f]" name="launchAPP" is-config="true" duration-ms="8250" started-at="2020-01-14T17:35:08 IST" finished-at="2020-01-14T17:35:16 IST">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.Reader@49fc609f]" name="launchAPP" is-config="true" duration-ms="7946" started-at="2020-01-28T16:41:44 IST" finished-at="2020-01-28T16:41:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="FAIL" signature="readingJSON()[pri:31, instance:com.dreamorbit.scripts.Reader@49fc609f]" name="readingJSON" duration-ms="21000" started-at="2020-01-14T17:35:16 IST" finished-at="2020-01-14T17:35:37 IST">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.dreamorbit.scripts.Reader.readingArrayjSONS(Reader.java:176)
-at com.dreamorbit.scripts.Reader.readingJSON(Reader.java:77)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="readingJSON()[pri:31, instance:com.dreamorbit.scripts.Reader@49fc609f]" name="readingJSON" duration-ms="25591" started-at="2020-01-28T16:41:52 IST" finished-at="2020-01-28T16:42:17 IST">
           <reporter-output>
             <line>
               <![CDATA[Json Download testcase with valid symmetric key is passed]]>
             </line>
+            <line>
+              <![CDATA[Current Time is available- Test case passed for current Time Json]]>
+            </line>
+            <line>
+              <![CDATA[deviceMotioninfo is available- Test case passed for deviceMotion Json]]>
+            </line>
+            <line>
+              <![CDATA[discardReason is available- Test case passed for discardReason Json]]>
+            </line>
+            <line>
+              <![CDATA[Items are not available under location json -Location Json level 1 test case Failed]]>
+            </line>
+            <line>
+              <![CDATA[Pedometer JSON contains all the required keys- test case passed ]]>
+            </line>
+            <line>
+              <![CDATA[totalStepsInDay is available- Test case passed for TotalStepCountOfDay Json]]>
+            </line>
+            <line>
+              <![CDATA[All the Summary Informations are available- Test case passed for Summary Json]]>
+            </line>
+            <line>
+              <![CDATA[All the Survey Informations are available- Test case passed for Survey Json]]>
+            </line>
+            <line>
+              <![CDATA[All the Weather Informations are available- Test case passed for weather Json]]>
+            </line>
           </reporter-output>
         </test-method> <!-- readingJSON -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.Reader@49fc609f]" name="closeApp" is-config="true" duration-ms="649" started-at="2020-01-14T17:35:37 IST" finished-at="2020-01-14T17:35:38 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.Reader@49fc609f]" name="closeApp" is-config="true" duration-ms="1010" started-at="2020-01-28T16:42:17 IST" finished-at="2020-01-28T16:42:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
