@@ -224,9 +224,9 @@ public class Reader extends BaseTest {
 		JSONObject jsonObject = (JSONObject) readableJson;
 		boolean currentTime = (boolean) jsonObject.containsKey("currentTime");
 		if (currentTime == true) {
-			Reporter.log("Current Time is available- Test case passed for current Time Json", true);
+			Reporter.log("Current Time key is available in the current Time Json file- Test case passed", true);
 		} else {
-			Reporter.log("Current Time is not available- Test case Failed for current Time Json", true);
+			Reporter.log("Current Time key is not available- Test case Failed for current Time Json", true);
 		}
 		
 
@@ -243,9 +243,9 @@ public class Reader extends BaseTest {
 	
 		boolean discardReason = (boolean) jsonObject.containsKey("discardReason");
 		if (discardReason == true) {
-			Reporter.log("discardReason is available- Test case passed for discardReason Json", true);
+			Reporter.log("discardReason key is available in discardReason Json file- Test case passed ", true);
 		} else {
-			Reporter.log("discardReason is not available- Test case Failed for discardReason Json", true);
+			Reporter.log("discardReason key is not available- Test case Failed for discardReason Json", true);
 		}
 
 	}
@@ -262,7 +262,7 @@ public class Reader extends BaseTest {
 		
 		boolean deviceMotioninfo = (boolean) jsonObject.containsKey("items");
 		if (deviceMotioninfo == true) {
-			Reporter.log("deviceMotioninfo is available- Test case passed for deviceMotion Json", true);
+			Reporter.log("deviceMotioninfo key is available deviceMotion Json file- Test case passed ", true);
 		} else {
 			Reporter.log("deviceMotioninfo is not available- Test case Failed for deviceMotion Json", true);
 		}
@@ -279,7 +279,7 @@ public class Reader extends BaseTest {
 		
 		boolean totalStepsInDay = (boolean) jsonObject.containsKey("totalStepsInDay");
 		if (totalStepsInDay == true) {
-			Reporter.log("totalStepsInDay is available- Test case passed for TotalStepCountOfDay Json",
+			Reporter.log("totalStepsInDay key is available in TotalStepCountOfDay Json file- Test case passed ",
 					true);
 		} else {
 			Reporter.log("totalStepsInDay is not available- Test case Failed for TotalStepCountOfDay Json",
@@ -301,7 +301,7 @@ public class Reader extends BaseTest {
 		
 		if(jsonObject.containsKey("Items"))
 		{
-			Reporter.log("Items are available under location JSON -Location Json level 1 test case passed");
+			Reporter.log("Items key is available under location JSON file- level 1 test case passed");
 			
 			JSONArray items = (JSONArray) jsonObject.get("items");
 			boolean isValid = (boolean) true; 
@@ -378,7 +378,7 @@ public class Reader extends BaseTest {
 	  
 		if(isValid==true)
 		{
-			Reporter.log("All the Summary Informations are available- Test case passed for Summary Json",true);
+			Reporter.log("All the Summary Informations/keys are available- Test case passed for Summary Json",true);
 			break;
 		}
 		else
@@ -413,7 +413,7 @@ public class Reader extends BaseTest {
 	  
 	  if(isvalid==true)
 	  {
-	  Reporter.log("All the Survey Informations are available- Test case passed for Survey Json",true);
+	  Reporter.log("All the Survey Informations/Keys are available- Test case passed for Survey Json",true);
 	  break;
 	  } 
 	  else 
@@ -449,7 +449,7 @@ public class Reader extends BaseTest {
 	  
 	  if(weatherInfo==true)
 	  {
-	  Reporter.log("All the Weather Informations are available- Test case passed for weather Json",true);
+	  Reporter.log("All the Weather Informations/Keys are available- Test case passed for weather Json",true);
 	  } 
 	  else { Reporter.log(
 	  "Weather Informations are not available- Test case Failed for Weather Json"
