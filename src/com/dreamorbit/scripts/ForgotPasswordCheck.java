@@ -1,6 +1,8 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -66,7 +68,7 @@ public class ForgotPasswordCheck extends BaseTest {
 			Reporter.log("Forgot password button NavigationFlowCheck- Testcase is passed",true);
 		} catch (AssertionError e) {
 			Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed for forgot password link click",true);
-			Assert.fail();
+			AssertJUnit.fail();
 		}
 	}
 
@@ -192,7 +194,7 @@ public class ForgotPasswordCheck extends BaseTest {
 			Reporter.log("Login link in forgot password screen is working as expected-Testcase is passed",true);
 		} catch (AssertionError e) {
 			Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed for Login link click in forgot password screen",true);
-			Assert.fail();
+			AssertJUnit.fail();
 		}
 
 	}

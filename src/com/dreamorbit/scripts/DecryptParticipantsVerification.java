@@ -1,6 +1,8 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -75,7 +77,7 @@ public class DecryptParticipantsVerification extends BaseTest
 		} 
 		catch (AssertionError e) {
 			Reporter.log("Participants Link Navigation under Actions Testcase is  failed"+"Actual URL" +aPPUrl+ "," + "Expected URL"+ ParticipantUrl, true);
-			Assert.fail();
+			AssertJUnit.fail();
 		}
 		
 		participantListPage.clickDecrypt();
@@ -88,7 +90,7 @@ public class DecryptParticipantsVerification extends BaseTest
 			 Reporter.log("Decrypt Participants in list with valid symmetric key -Testcase is Passed",true);
 		} catch (Exception e) {
 			Reporter.log("Decrypt Participants in list with valid symmetric key -Testcase is Failed",true);
-			Assert.fail();
+			AssertJUnit.fail();
 		}
 		 
 		 
@@ -98,7 +100,7 @@ public class DecryptParticipantsVerification extends BaseTest
 			} 
 			catch (AssertionError e) {
 				Reporter.log("Decrypt Participants button is still enabled after the decryption of the participant list , Testcase is failed", true);
-				Assert.fail();
+				AssertJUnit.fail();
 			}
 			
 		 

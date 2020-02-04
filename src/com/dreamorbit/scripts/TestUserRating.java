@@ -19,6 +19,8 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -55,9 +57,10 @@ public class TestUserRating extends BaseTest {
 
 		try {
 			do {
-				Thread.sleep(5000);
+				Thread.sleep(6000);
 				JavascriptExecutor js = (JavascriptExecutor) driver;
 				js.executeScript("window.scrollTo(0, document.body.scrollHeight)"); 
+				Thread.sleep(1000);
 			} while (ratingPage.lodingIconVisibility() == true);
 
 		} catch (Exception e) {

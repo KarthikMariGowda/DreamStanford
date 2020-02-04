@@ -1,6 +1,9 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -62,7 +65,7 @@ public class VerifySessionExpiry extends BaseTest {
 			Reporter.log("Session is expired- testcase passed", true);
 		} catch (AssertionError e) {
 			Reporter.log("Session is not expired- testcase failed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 		Thread.sleep(3000);

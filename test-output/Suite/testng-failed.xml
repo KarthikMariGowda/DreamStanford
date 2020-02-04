@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dreamorbit.scripts.TestUserRating">
+      <class name="com.dreamorbit.scripts.ForgotPasswordCheck">
         <methods>
           <include name="closeApp"/>
-          <include name="launchAPP"/>
-          <include name="ratingAvgCheck"/>
-        </methods>
-      </class> <!-- com.dreamorbit.scripts.TestUserRating -->
-      <class name="com.dreamorbit.scripts.VerifySaveKeyForSession">
-        <methods>
-          <include name="testSaveSessionKey"/>
-          <include name="closeApp"/>
+          <include name="fPChkWithAttemptlimitExceeded"/>
           <include name="launchAPP"/>
         </methods>
-      </class> <!-- com.dreamorbit.scripts.VerifySaveKeyForSession -->
+      </class> <!-- com.dreamorbit.scripts.ForgotPasswordCheck -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,6 +1,7 @@
 
 package com.dreamorbit.scripts;
 
+import org.testng.annotations.Test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

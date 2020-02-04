@@ -1,6 +1,8 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -43,7 +45,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed");
-		Assert.fail();
+		AssertJUnit.fail();
 	}
 	Thread.sleep(2000);
 	
@@ -57,7 +59,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed",true);
-		Assert.fail();
+		AssertJUnit.fail();
 	}
 	
 	Thread.sleep(2000);
@@ -71,7 +73,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed",true);
-		Assert.fail();
+		AssertJUnit.fail();
 	}
 	Thread.sleep(2000);
 	
@@ -85,7 +87,7 @@ public void navigationFlowCheck() throws InterruptedException
 	} 
 	catch (AssertionError e) {
 		Reporter.log("The Expected Page URL\" +eURL+ \"is not Dispalyed",true);
-		Assert.fail();
+		AssertJUnit.fail();
 	}
 	
 }

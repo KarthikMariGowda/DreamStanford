@@ -1,6 +1,9 @@
 package com.dreamorbit.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -78,7 +81,7 @@ public class TestNotification extends BaseTest {
 			Reporter.log("Notification is updating successfully for Daily schedule-Test case passed", true);
 		} catch (Exception e) {
 			Reporter.log("Notification updating for Daily schedule-Test case Failed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 		Thread.sleep(4000);
 		studiesPage.scheduleNotificationBTNClick();
@@ -108,7 +111,7 @@ public class TestNotification extends BaseTest {
 			Reporter.log("Notification is updating successfully for Weekly schedule-Test case passed", true);
 		} catch (Exception e) {
 			Reporter.log("Notification updating for Weekly schedule-Test case Failed", true);
-			AssertJUnit.fail();
+			Assert.fail();
 		}
 
 	}
