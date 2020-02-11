@@ -3,28 +3,28 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.dreamorbit.scripts.LogoutVerification"/>
-      <class name="com.dreamorbit.scripts.NavigationCheckUploadsLink"/>
-      <class name="com.dreamorbit.scripts.VerifyTokenToggleBTN"/>
-      <class name="com.dreamorbit.scripts.TestShowHidePassword"/>
-      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkey"/>
-      <class name="com.dreamorbit.scripts.JsonDownloadValidSkey"/>
-      <class name="com.dreamorbit.scripts.TestValidLogin"/>
-      <class name="com.dreamorbit.scripts.VerifySessionExpiry"/>
-      <class name="com.dreamorbit.scripts.NavigationCheckOnDrawerOptions"/>
-      <class name="com.dreamorbit.scripts.DecryptParticipantsVerification"/>
-      <class name="com.dreamorbit.scripts.TestSearchResearcher"/>
-      <class name="com.dreamorbit.scripts.TestResetPasswordValid"/>
-      <class name="com.dreamorbit.scripts.PersonalInfoDecrypt"/>
-      <class name="com.dreamorbit.scripts.TestNotification"/>
-      <class name="com.dreamorbit.scripts.TestInvalidLogin"/>
-      <class name="com.dreamorbit.scripts.TestUserRating"/>
-      <class name="com.dreamorbit.scripts.VerifySaveKeyForSession"/>
-      <class name="com.dreamorbit.scripts.ForgotPasswordCheck"/>
-      <class name="com.dreamorbit.scripts.AddResearcherCheck"/>
-      <class name="com.dreamorbit.scripts.Reader"/>
-      <class name="com.dreamorbit.scripts.TestAuditRessearcher"/>
-      <class name="com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck"/>
+      <class name="com.dreamorbit.scripts.AddResearcherTest"/>
+      <class name="com.dreamorbit.scripts.AuditResearcherTest"/>
+      <class name="com.dreamorbit.scripts.InvalidLoginTest"/>
+      <class name="com.dreamorbit.scripts.ForgotPasswordTest"/>
+      <class name="com.dreamorbit.scripts.VerifyTokenToggleBTNTest"/>
+      <class name="com.dreamorbit.scripts.UploadsLinkNavigationTest"/>
+      <class name="com.dreamorbit.scripts.NavigationOnDrawerOptionsTest"/>
+      <class name="com.dreamorbit.scripts.UserRatingTest"/>
+      <class name="com.dreamorbit.scripts.PersonalInfoDecryptTest"/>
+      <class name="com.dreamorbit.scripts.LabelOptionsNavigationFlowTest"/>
+      <class name="com.dreamorbit.scripts.LogoutTest"/>
+      <class name="com.dreamorbit.scripts.NotificationTest"/>
+      <class name="com.dreamorbit.scripts.ResetPasswordValidTest"/>
+      <class name="com.dreamorbit.scripts.VerifySessionExpiryTest"/>
+      <class name="com.dreamorbit.scripts.SaveKeyForSessionTest"/>
+      <class name="com.dreamorbit.scripts.JsonDownloadValidSkeyTest"/>
+      <class name="com.dreamorbit.scripts.SearchResearcherTest"/>
+      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest"/>
+      <class name="com.dreamorbit.scripts.ShowhidePasswordTest"/>
+      <class name="com.dreamorbit.scripts.ValidLoginTest"/>
+      <class name="com.dreamorbit.scripts.JsonReaderTest"/>
+      <class name="com.dreamorbit.scripts.DecryptParticipantVerificationTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.dreamorbit.scripts.ForgotPasswordCheck">
+      <class name="com.dreamorbit.scripts.AddResearcherTest">
         <methods>
+          <include name="AddResearcherCheckValid"/>
           <include name="closeApp"/>
-          <include name="fPChkWithAttemptlimitExceeded"/>
           <include name="launchAPP"/>
         </methods>
-      </class> <!-- com.dreamorbit.scripts.ForgotPasswordCheck -->
+      </class> <!-- com.dreamorbit.scripts.AddResearcherTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

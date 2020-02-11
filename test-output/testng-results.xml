@@ -2,55 +2,61 @@
 <testng-results skipped="0" failed="0" ignored="1" total="28" passed="27">
   <reporter-output>
     <line>
-      <![CDATA[Researcher page navigation testcase is passed]]>
+      <![CDATA[Researcher is getting added successfully- Test case is passed]]>
     </line>
     <line>
-      <![CDATA[Rating page navigation testcase is passed]]>
+      <![CDATA[Copy reseracher sKey to clip board -Test case is passed]]>
     </line>
     <line>
-      <![CDATA[Studies page navigation testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[AuditResearcher page navigation testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Logout Cancel button functionality is passed]]>
-    </line>
-    <line>
-      <![CDATA[Logout success testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Participants Link Navigation under Actions - Testcase is  passed]]>
-    </line>
-    <line>
-      <![CDATA[Decrypt Participants in list with valid symmetric key -Testcase is Passed]]>
-    </line>
-    <line>
-      <![CDATA[Decrypt Participants button is Disabled after the decryption is done, Testcase is Passed]]>
-    </line>
-    <line>
-      <![CDATA[Researcher exact Search test case with existing data is passed]]>
-    </line>
-    <line>
-      <![CDATA[Researcher partial Search test case with existing data is passed]]>
-    </line>
-    <line>
-      <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
-    </line>
-    <line>
-      <![CDATA[Researcher Search testcase with  non existing data is passed]]>
-    </line>
-    <line>
-      <![CDATA[Reset password testcase with valid data is passed]]>
+      <![CDATA[Trying to add researcher with invalid email iD's - Testcase is passed]]>
     </line>
     <line>
       <![CDATA[9 Uploads]]>
     </line>
     <line>
-      <![CDATA[true]]>
+      <![CDATA[Viewed Participant Details under Audit recorded- testcase passed]]>
     </line>
     <line>
-      <![CDATA[Navigation flow on 9 Uploads link click testcase is passed]]>
+      <![CDATA[Viewed Participant Uploads under Audit recorded- testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[Viewed Participant Listing activity under Audit recorded- testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[Added new Researcher activity under Audit recorded- testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[Researcher Login activity under Audit is recorded- testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[RowCount=3]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login verification testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login verification testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login verification testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Forgot password button NavigationFlowCheck- Testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Forgot password feature with valid data is working as expected- Testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Back navigation from Reset Password screen is working as expected - Testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Forgot password feature with Invalid inputs - Testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Forgot password feature with invalid Email attempt limit exceeds 5  - Testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Login link in forgot password screen is working as expected-Testcase is passed]]>
     </line>
     <line>
       <![CDATA[Verify Token updated successfully toast is displaying-test case passed]]>
@@ -68,16 +74,91 @@
       <![CDATA[9 Uploads]]>
     </line>
     <line>
+      <![CDATA[true]]>
+    </line>
+    <line>
+      <![CDATA[Navigation flow on 9 Uploads link click testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Researcher page navigation testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Rating page navigation testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Studies page navigation testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[AuditResearcher page navigation testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Calculated Average rating and displayed average ratings are matching- testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[Actual displayed number of users and expected number of users are matching- testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[9 Uploads]]>
+    </line>
+    <line>
       <![CDATA[Personal info decrypt via 9 Uploads uploads testcase is passed]]>
     </line>
     <line>
-      <![CDATA[Password is hidden on the first time input- testcase is passed]]>
+      <![CDATA[TotalParticipant Navigation Check testcase is passed]]>
     </line>
     <line>
-      <![CDATA[Show Password testcase is passed]]>
+      <![CDATA[TotalResearcher Navigation Check testcase is passed]]>
     </line>
     <line>
-      <![CDATA[Hide Password testcase is passed]]>
+      <![CDATA[Logout Cancel button functionality is passed]]>
+    </line>
+    <line>
+      <![CDATA[Logout success testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Cancel button functionality in the Set Notification screen is working as expected- TestCase Passed]]>
+    </line>
+    <line>
+      <![CDATA[Days drop down is disabled on daily schedule selection-Test case passed ]]>
+    </line>
+    <line>
+      <![CDATA[Notification is updating successfully for Daily schedule-Test case passed]]>
+    </line>
+    <line>
+      <![CDATA[Days drop down is Enabled on Weekly schedule selection-Test case passed ]]>
+    </line>
+    <line>
+      <![CDATA[Notification is updating successfully for Weekly schedule-Test case passed]]>
+    </line>
+    <line>
+      <![CDATA[Reset password testcase with valid data is passed]]>
+    </line>
+    <line>
+      <![CDATA[Session is saving for File downloads - testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[Session is saving for personal info screen- testcase passed]]>
+    </line>
+    <line>
+      <![CDATA[Researcher added successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Session is saving for Adding researcher - Save Session Key testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Json Download testcase with valid symmetric key is passed]]>
+    </line>
+    <line>
+      <![CDATA[Researcher exact Search test case with existing data is passed]]>
+    </line>
+    <line>
+      <![CDATA[Researcher partial Search test case with existing data is passed]]>
+    </line>
+    <line>
+      <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
+    </line>
+    <line>
+      <![CDATA[Researcher Search testcase with  non existing data is passed]]>
     </line>
     <line>
       <![CDATA[Json Download testcase with invalid symmetric key is passed]]>
@@ -107,82 +188,16 @@
       <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
     </line>
     <line>
-      <![CDATA[Json Download testcase with valid symmetric key is passed]]>
+      <![CDATA[Password is hidden on the first time input- testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Show Password testcase is passed]]>
+    </line>
+    <line>
+      <![CDATA[Hide Password testcase is passed]]>
     </line>
     <line>
       <![CDATA[Login testcase with valid data is passed]]>
-    </line>
-    <line>
-      <![CDATA[Cancel button functionality in the Set Notification screen is working as expected- TestCase Passed]]>
-    </line>
-    <line>
-      <![CDATA[Days drop down is disabled on daily schedule selection-Test case passed ]]>
-    </line>
-    <line>
-      <![CDATA[Notification is updating successfully for Daily schedule-Test case passed]]>
-    </line>
-    <line>
-      <![CDATA[Days drop down is Enabled on Weekly schedule selection-Test case passed ]]>
-    </line>
-    <line>
-      <![CDATA[Notification is updating successfully for Weekly schedule-Test case passed]]>
-    </line>
-    <line>
-      <![CDATA[RowCount=3]]>
-    </line>
-    <line>
-      <![CDATA[Invalid login verification testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Invalid login verification testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Invalid login verification testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Calculated Average rating and displayed average ratings are matching- testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[Actual displayed number of users and expected number of users are matching- testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[Session is saving for File downloads - testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[Session is saving for personal info screen- testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[Researcher added successfully.]]>
-    </line>
-    <line>
-      <![CDATA[Session is saving for Adding researcher - Save Session Key testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Forgot password button NavigationFlowCheck- Testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Forgot password feature with valid data is working as expected- Testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Back navigation from Reset Password screen is working as expected - Testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Forgot password feature with Invalid inputs - Testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Forgot password feature with invalid Email attempt limit exceeds 5  - Testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Login link in forgot password screen is working as expected-Testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[Researcher is getting added successfully- Test case is passed]]>
-    </line>
-    <line>
-      <![CDATA[Copy reseracher sKey to clip board -Test case is passed]]>
-    </line>
-    <line>
-      <![CDATA[Trying to add researcher with invalid email iD's - Testcase is passed]]>
     </line>
     <line>
       <![CDATA[Json Download testcase with valid symmetric key is passed]]>
@@ -215,40 +230,25 @@
       <![CDATA[All the Weather Informations/Keys are available- Test case passed for weather Json]]>
     </line>
     <line>
-      <![CDATA[9 Uploads]]>
+      <![CDATA[Participants Link Navigation under Actions - Testcase is  passed]]>
     </line>
     <line>
-      <![CDATA[Viewed Participant Details under Audit recorded- testcase passed]]>
+      <![CDATA[Decrypt Participants in list with valid symmetric key -Testcase is Passed]]>
     </line>
     <line>
-      <![CDATA[Viewed Participant Uploads under Audit recorded- testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[Viewed Participant Listing activity under Audit recorded- testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[Added new Researcher activity under Audit recorded- testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[Researcher Login activity under Audit is recorded- testcase passed]]>
-    </line>
-    <line>
-      <![CDATA[TotalParticipant Navigation Check testcase is passed]]>
-    </line>
-    <line>
-      <![CDATA[TotalResearcher Navigation Check testcase is passed]]>
+      <![CDATA[Decrypt Participants button is Disabled after the decryption is done, Testcase is Passed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="1028909" started-at="2020-02-03T16:40:43 IST" finished-at="2020-02-03T16:57:52 IST">
+  <suite name="Suite" duration-ms="1073579" started-at="2020-02-10T15:32:57 IST" finished-at="2020-02-10T15:50:51 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1028909" started-at="2020-02-03T16:40:43 IST" finished-at="2020-02-03T16:57:52 IST">
-      <class name="com.dreamorbit.scripts.PersonalInfoDecrypt">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.PersonalInfoDecrypt@1c3a4799]" name="launchAPP" is-config="true" duration-ms="9001" started-at="2020-02-03T16:45:16 IST" finished-at="2020-02-03T16:45:25 IST">
+    <test name="Test" duration-ms="1073579" started-at="2020-02-10T15:32:57 IST" finished-at="2020-02-10T15:50:51 IST">
+      <class name="com.dreamorbit.scripts.PersonalInfoDecryptTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.PersonalInfoDecryptTest@614ddd49]" name="launchAPP" is-config="true" duration-ms="7770" started-at="2020-02-10T15:42:10 IST" finished-at="2020-02-10T15:42:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="TestpersonalInfoDecrypt()[pri:21, instance:com.dreamorbit.scripts.PersonalInfoDecrypt@1c3a4799]" name="TestpersonalInfoDecrypt" duration-ms="30448" started-at="2020-02-03T16:45:25 IST" finished-at="2020-02-03T16:45:56 IST">
+        <test-method status="PASS" signature="TestpersonalInfoDecrypt()[pri:21, instance:com.dreamorbit.scripts.PersonalInfoDecryptTest@614ddd49]" name="TestpersonalInfoDecrypt" duration-ms="25826" started-at="2020-02-10T15:42:17 IST" finished-at="2020-02-10T15:42:43 IST">
           <reporter-output>
             <line>
               <![CDATA[9 Uploads]]>
@@ -258,134 +258,196 @@
             </line>
           </reporter-output>
         </test-method> <!-- TestpersonalInfoDecrypt -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.PersonalInfoDecrypt@1c3a4799]" name="closeApp" is-config="true" duration-ms="610" started-at="2020-02-03T16:45:56 IST" finished-at="2020-02-03T16:45:56 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.PersonalInfoDecryptTest@614ddd49]" name="closeApp" is-config="true" duration-ms="630" started-at="2020-02-10T15:42:43 IST" finished-at="2020-02-10T15:42:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.PersonalInfoDecrypt -->
-      <class name="com.dreamorbit.scripts.TestResetPasswordValid">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestResetPasswordValid@694e1548]" name="launchAPP" is-config="true" duration-ms="8094" started-at="2020-02-03T16:43:53 IST" finished-at="2020-02-03T16:44:01 IST">
+      </class> <!-- com.dreamorbit.scripts.PersonalInfoDecryptTest -->
+      <class name="com.dreamorbit.scripts.ResetPasswordValidTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ResetPasswordValidTest@131276c2]" name="launchAPP" is-config="true" duration-ms="8177" started-at="2020-02-10T15:45:22 IST" finished-at="2020-02-10T15:45:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="rstpwdVerification()[pri:3, instance:com.dreamorbit.scripts.TestResetPasswordValid@694e1548]" name="rstpwdVerification" duration-ms="16403" started-at="2020-02-03T16:44:01 IST" finished-at="2020-02-03T16:44:17 IST">
+        <test-method status="PASS" signature="rstpwdVerification()[pri:3, instance:com.dreamorbit.scripts.ResetPasswordValidTest@131276c2]" name="rstpwdVerification" duration-ms="15963" started-at="2020-02-10T15:45:30 IST" finished-at="2020-02-10T15:45:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Reset password testcase with valid data is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- rstpwdVerification -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestResetPasswordValid@694e1548]" name="closeApp" is-config="true" duration-ms="611" started-at="2020-02-03T16:44:17 IST" finished-at="2020-02-03T16:44:18 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ResetPasswordValidTest@131276c2]" name="closeApp" is-config="true" duration-ms="670" started-at="2020-02-10T15:45:46 IST" finished-at="2020-02-10T15:45:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestResetPasswordValid -->
-      <class name="com.dreamorbit.scripts.TestUserRating">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestUserRating@3fd7a715]" name="launchAPP" is-config="true" duration-ms="8679" started-at="2020-02-03T16:49:58 IST" finished-at="2020-02-03T16:50:06 IST">
+      </class> <!-- com.dreamorbit.scripts.ResetPasswordValidTest -->
+      <class name="com.dreamorbit.scripts.LabelOptionsNavigationFlowTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowTest@1f554b06]" name="launchAPP" is-config="true" duration-ms="7391" started-at="2020-02-10T15:42:44 IST" finished-at="2020-02-10T15:42:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="ratingAvgCheck()[pri:25, instance:com.dreamorbit.scripts.TestUserRating@3fd7a715]" name="ratingAvgCheck" duration-ms="73832" started-at="2020-02-03T16:50:06 IST" finished-at="2020-02-03T16:51:20 IST">
+        <test-method status="PASS" signature="totalParticipantNavigationCheck()[pri:14, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowTest@1f554b06]" name="totalParticipantNavigationCheck" duration-ms="18382" started-at="2020-02-10T15:42:51 IST" finished-at="2020-02-10T15:43:10 IST">
           <reporter-output>
             <line>
-              <![CDATA[Calculated Average rating and displayed average ratings are matching- testcase passed]]>
+              <![CDATA[TotalParticipant Navigation Check testcase is passed]]>
             </line>
             <line>
-              <![CDATA[Actual displayed number of users and expected number of users are matching- testcase passed]]>
+              <![CDATA[TotalResearcher Navigation Check testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ratingAvgCheck -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestUserRating@3fd7a715]" name="closeApp" is-config="true" duration-ms="612" started-at="2020-02-03T16:51:20 IST" finished-at="2020-02-03T16:51:21 IST">
+        </test-method> <!-- totalParticipantNavigationCheck -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowTest@1f554b06]" name="closeApp" is-config="true" duration-ms="645" started-at="2020-02-10T15:43:10 IST" finished-at="2020-02-10T15:43:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestUserRating -->
-      <class name="com.dreamorbit.scripts.ForgotPasswordCheck">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="launchAPP" is-config="true" duration-ms="8658" started-at="2020-02-03T16:52:13 IST" finished-at="2020-02-03T16:52:22 IST">
+      </class> <!-- com.dreamorbit.scripts.LabelOptionsNavigationFlowTest -->
+      <class name="com.dreamorbit.scripts.DecryptParticipantVerificationTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.DecryptParticipantVerificationTest@23faf8f2]" name="launchAPP" is-config="true" duration-ms="7998" started-at="2020-02-10T15:50:32 IST" finished-at="2020-02-10T15:50:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="ForgotPWDNavigationFlowCheck()[pri:7, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="ForgotPWDNavigationFlowCheck" duration-ms="226" started-at="2020-02-03T16:52:22 IST" finished-at="2020-02-03T16:52:22 IST">
+        <test-method status="PASS" signature="testDecryptParticipants()[pri:19, instance:com.dreamorbit.scripts.DecryptParticipantVerificationTest@23faf8f2]" name="testDecryptParticipants" duration-ms="10658" started-at="2020-02-10T15:50:40 IST" finished-at="2020-02-10T15:50:50 IST">
           <reporter-output>
             <line>
-              <![CDATA[Forgot password button NavigationFlowCheck- Testcase is passed]]>
+              <![CDATA[Participants Link Navigation under Actions - Testcase is  passed]]>
+            </line>
+            <line>
+              <![CDATA[Decrypt Participants in list with valid symmetric key -Testcase is Passed]]>
+            </line>
+            <line>
+              <![CDATA[Decrypt Participants button is Disabled after the decryption is done, Testcase is Passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ForgotPWDNavigationFlowCheck -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="closeApp" is-config="true" duration-ms="714" started-at="2020-02-03T16:52:22 IST" finished-at="2020-02-03T16:52:23 IST">
+        </test-method> <!-- testDecryptParticipants -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.DecryptParticipantVerificationTest@23faf8f2]" name="closeApp" is-config="true" duration-ms="642" started-at="2020-02-10T15:50:50 IST" finished-at="2020-02-10T15:50:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="launchAPP" is-config="true" duration-ms="8253" started-at="2020-02-03T16:52:23 IST" finished-at="2020-02-03T16:52:31 IST">
+      </class> <!-- com.dreamorbit.scripts.DecryptParticipantVerificationTest -->
+      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest@71bbf57e]" name="launchAPP" is-config="true" duration-ms="7842" started-at="2020-02-10T15:48:09 IST" finished-at="2020-02-10T15:48:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="forgotPasswordValid()[pri:8, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="forgotPasswordValid" duration-ms="21509" started-at="2020-02-03T16:52:31 IST" finished-at="2020-02-03T16:52:52 IST">
+        <test-method status="PASS" signature="jsonDownloadInvalidSkey()[pri:5, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest@71bbf57e]" name="jsonDownloadInvalidSkey" duration-ms="18192" started-at="2020-02-10T15:48:17 IST" finished-at="2020-02-10T15:48:35 IST">
           <reporter-output>
             <line>
-              <![CDATA[Forgot password feature with valid data is working as expected- Testcase is passed]]>
+              <![CDATA[Json Download testcase with invalid symmetric key is passed]]>
             </line>
             <line>
-              <![CDATA[Back navigation from Reset Password screen is working as expected - Testcase is passed]]>
+              <![CDATA[Json Download testcase with invalid symmetric key is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- forgotPasswordValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="closeApp" is-config="true" duration-ms="620" started-at="2020-02-03T16:52:52 IST" finished-at="2020-02-03T16:52:53 IST">
+        </test-method> <!-- jsonDownloadInvalidSkey -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest@71bbf57e]" name="closeApp" is-config="true" duration-ms="660" started-at="2020-02-10T15:48:35 IST" finished-at="2020-02-10T15:48:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="launchAPP" is-config="true" duration-ms="7679" started-at="2020-02-03T16:52:53 IST" finished-at="2020-02-03T16:53:01 IST">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest@71bbf57e]" name="launchAPP" is-config="true" duration-ms="7596" started-at="2020-02-10T15:48:36 IST" finished-at="2020-02-10T15:48:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="forgotPasswordInValid()[pri:9, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="forgotPasswordInValid" duration-ms="19195" started-at="2020-02-03T16:53:01 IST" finished-at="2020-02-03T16:53:20 IST">
+        <test-method status="PASS" signature="jsonDownloadIncorrectSkey()[pri:6, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest@71bbf57e]" name="jsonDownloadIncorrectSkey" duration-ms="32855" started-at="2020-02-10T15:48:44 IST" finished-at="2020-02-10T15:49:17 IST">
           <reporter-output>
             <line>
-              <![CDATA[Forgot password feature with Invalid inputs - Testcase is passed]]>
+              <![CDATA[invalidkey input counts =3]]>
+            </line>
+            <line>
+              <![CDATA[Invalid key]]>
+            </line>
+            <line>
+              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
+            </line>
+            <line>
+              <![CDATA[Invalid key]]>
+            </line>
+            <line>
+              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
+            </line>
+            <line>
+              <![CDATA[Invalid key]]>
+            </line>
+            <line>
+              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- forgotPasswordInValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="closeApp" is-config="true" duration-ms="613" started-at="2020-02-03T16:53:20 IST" finished-at="2020-02-03T16:53:20 IST">
+        </test-method> <!-- jsonDownloadIncorrectSkey -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest@71bbf57e]" name="closeApp" is-config="true" duration-ms="657" started-at="2020-02-10T15:49:17 IST" finished-at="2020-02-10T15:49:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="launchAPP" is-config="true" duration-ms="8223" started-at="2020-02-03T16:53:20 IST" finished-at="2020-02-03T16:53:29 IST">
+      </class> <!-- com.dreamorbit.scripts.JsonDownloadInvalidSkeyTest -->
+      <class name="com.dreamorbit.scripts.ShowhidePasswordTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ShowhidePasswordTest@7f13d6e]" name="launchAPP" is-config="true" duration-ms="8339" started-at="2020-02-10T15:49:17 IST" finished-at="2020-02-10T15:49:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="fPChkWithAttemptlimitExceeded()[pri:10, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="fPChkWithAttemptlimitExceeded" duration-ms="60860" started-at="2020-02-03T16:53:29 IST" finished-at="2020-02-03T16:54:29 IST">
+        <test-method status="PASS" signature="testShowHidePWD()[pri:22, instance:com.dreamorbit.scripts.ShowhidePasswordTest@7f13d6e]" name="testShowHidePWD" duration-ms="655" started-at="2020-02-10T15:49:26 IST" finished-at="2020-02-10T15:49:26 IST">
           <reporter-output>
             <line>
-              <![CDATA[Forgot password feature with invalid Email attempt limit exceeds 5  - Testcase is passed]]>
+              <![CDATA[Password is hidden on the first time input- testcase is passed]]>
+            </line>
+            <line>
+              <![CDATA[Show Password testcase is passed]]>
+            </line>
+            <line>
+              <![CDATA[Hide Password testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- fPChkWithAttemptlimitExceeded -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="closeApp" is-config="true" duration-ms="607" started-at="2020-02-03T16:54:29 IST" finished-at="2020-02-03T16:54:30 IST">
+        </test-method> <!-- testShowHidePWD -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ShowhidePasswordTest@7f13d6e]" name="closeApp" is-config="true" duration-ms="774" started-at="2020-02-10T15:49:26 IST" finished-at="2020-02-10T15:49:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="launchAPP" is-config="true" duration-ms="8078" started-at="2020-02-03T16:54:30 IST" finished-at="2020-02-03T16:54:38 IST">
+      </class> <!-- com.dreamorbit.scripts.ShowhidePasswordTest -->
+      <class name="com.dreamorbit.scripts.SaveKeyForSessionTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.SaveKeyForSessionTest@26aa12dd]" name="launchAPP" is-config="true" duration-ms="7717" started-at="2020-02-10T15:45:46 IST" finished-at="2020-02-10T15:45:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="forgotPwdTologinNavigationChk()[pri:11, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="forgotPwdTologinNavigationChk" duration-ms="330" started-at="2020-02-03T16:54:38 IST" finished-at="2020-02-03T16:54:38 IST">
+        <test-method status="PASS" signature="testSaveSessionKey()[pri:28, instance:com.dreamorbit.scripts.SaveKeyForSessionTest@26aa12dd]" name="testSaveSessionKey" duration-ms="40724" started-at="2020-02-10T15:45:54 IST" finished-at="2020-02-10T15:46:35 IST">
           <reporter-output>
             <line>
-              <![CDATA[Login link in forgot password screen is working as expected-Testcase is passed]]>
+              <![CDATA[Session is saving for File downloads - testcase passed]]>
+            </line>
+            <line>
+              <![CDATA[Session is saving for personal info screen- testcase passed]]>
+            </line>
+            <line>
+              <![CDATA[Researcher added successfully.]]>
+            </line>
+            <line>
+              <![CDATA[Session is saving for Adding researcher - Save Session Key testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- forgotPwdTologinNavigationChk -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordCheck@71bbf57e]" name="closeApp" is-config="true" duration-ms="618" started-at="2020-02-03T16:54:38 IST" finished-at="2020-02-03T16:54:39 IST">
+        </test-method> <!-- testSaveSessionKey -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.SaveKeyForSessionTest@26aa12dd]" name="closeApp" is-config="true" duration-ms="631" started-at="2020-02-10T15:46:35 IST" finished-at="2020-02-10T15:46:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.ForgotPasswordCheck -->
-      <class name="com.dreamorbit.scripts.Reader">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.Reader@51cdd8a]" name="launchAPP" is-config="true" duration-ms="8441" started-at="2020-02-03T16:55:46 IST" finished-at="2020-02-03T16:55:54 IST">
+      </class> <!-- com.dreamorbit.scripts.SaveKeyForSessionTest -->
+      <class name="com.dreamorbit.scripts.JsonDownloadValidSkeyTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadValidSkeyTest@3fd7a715]" name="launchAPP" is-config="true" duration-ms="7385" started-at="2020-02-10T15:46:36 IST" finished-at="2020-02-10T15:46:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="readingJSON()[pri:31, instance:com.dreamorbit.scripts.Reader@51cdd8a]" name="readingJSON" duration-ms="35904" started-at="2020-02-03T16:55:54 IST" finished-at="2020-02-03T16:56:30 IST">
+        <test-method status="PASS" signature="jsonDownloadCheck()[pri:4, instance:com.dreamorbit.scripts.JsonDownloadValidSkeyTest@3fd7a715]" name="jsonDownloadCheck" duration-ms="16194" started-at="2020-02-10T15:46:43 IST" finished-at="2020-02-10T15:46:59 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Json Download testcase with valid symmetric key is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- jsonDownloadCheck -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadValidSkeyTest@3fd7a715]" name="closeApp" is-config="true" duration-ms="733" started-at="2020-02-10T15:46:59 IST" finished-at="2020-02-10T15:47:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.dreamorbit.scripts.JsonDownloadValidSkeyTest -->
+      <class name="com.dreamorbit.scripts.JsonReaderTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonReaderTest@d44fc21]" name="launchAPP" is-config="true" duration-ms="7016" started-at="2020-02-10T15:49:39 IST" finished-at="2020-02-10T15:49:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="readingJSON()[pri:31, instance:com.dreamorbit.scripts.JsonReaderTest@d44fc21]" name="readingJSON" duration-ms="44651" started-at="2020-02-10T15:49:46 IST" finished-at="2020-02-10T15:50:31 IST">
           <reporter-output>
             <line>
               <![CDATA[Json Download testcase with valid symmetric key is passed]]>
@@ -419,97 +481,86 @@
             </line>
           </reporter-output>
         </test-method> <!-- readingJSON -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.Reader@51cdd8a]" name="closeApp" is-config="true" duration-ms="624" started-at="2020-02-03T16:56:30 IST" finished-at="2020-02-03T16:56:31 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonReaderTest@d44fc21]" name="closeApp" is-config="true" duration-ms="648" started-at="2020-02-10T15:50:31 IST" finished-at="2020-02-10T15:50:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.Reader -->
-      <class name="com.dreamorbit.scripts.JsonDownloadValidSkey">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadValidSkey@4f063c0a]" name="launchAPP" is-config="true" duration-ms="8169" started-at="2020-02-03T16:47:17 IST" finished-at="2020-02-03T16:47:26 IST">
+      </class> <!-- com.dreamorbit.scripts.JsonReaderTest -->
+      <class name="com.dreamorbit.scripts.ValidLoginTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ValidLoginTest@51cdd8a]" name="launchAPP" is-config="true" duration-ms="7957" started-at="2020-02-10T15:49:27 IST" finished-at="2020-02-10T15:49:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="jsonDownloadCheck()[pri:4, instance:com.dreamorbit.scripts.JsonDownloadValidSkey@4f063c0a]" name="jsonDownloadCheck" duration-ms="16734" started-at="2020-02-03T16:47:26 IST" finished-at="2020-02-03T16:47:42 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Json Download testcase with valid symmetric key is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- jsonDownloadCheck -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadValidSkey@4f063c0a]" name="closeApp" is-config="true" duration-ms="629" started-at="2020-02-03T16:47:42 IST" finished-at="2020-02-03T16:47:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.JsonDownloadValidSkey -->
-      <class name="com.dreamorbit.scripts.TestValidLogin">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestValidLogin@1e6d1014]" name="launchAPP" is-config="true" duration-ms="7795" started-at="2020-02-03T16:47:43 IST" finished-at="2020-02-03T16:47:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:com.dreamorbit.scripts.TestValidLogin@1e6d1014]" name="testValidlogin" duration-ms="3297" started-at="2020-02-03T16:47:51 IST" finished-at="2020-02-03T16:47:54 IST">
+        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:com.dreamorbit.scripts.ValidLoginTest@51cdd8a]" name="testValidlogin" duration-ms="3587" started-at="2020-02-10T15:49:35 IST" finished-at="2020-02-10T15:49:39 IST">
           <reporter-output>
             <line>
               <![CDATA[Login testcase with valid data is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidlogin -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestValidLogin@1e6d1014]" name="closeApp" is-config="true" duration-ms="857" started-at="2020-02-03T16:47:54 IST" finished-at="2020-02-03T16:47:55 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ValidLoginTest@51cdd8a]" name="closeApp" is-config="true" duration-ms="687" started-at="2020-02-10T15:49:39 IST" finished-at="2020-02-10T15:49:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestValidLogin -->
-      <class name="com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck@23faf8f2]" name="launchAPP" is-config="true" duration-ms="7960" started-at="2020-02-03T16:57:23 IST" finished-at="2020-02-03T16:57:31 IST">
+      </class> <!-- com.dreamorbit.scripts.ValidLoginTest -->
+      <class name="com.dreamorbit.scripts.SearchResearcherTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.SearchResearcherTest@711f39f9]" name="launchAPP" is-config="true" duration-ms="8328" started-at="2020-02-10T15:47:00 IST" finished-at="2020-02-10T15:47:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="totalParticipantNavigationCheck()[pri:14, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck@23faf8f2]" name="totalParticipantNavigationCheck" duration-ms="19842" started-at="2020-02-03T16:57:31 IST" finished-at="2020-02-03T16:57:51 IST">
+        <test-method status="PASS" signature="searchResearcherValid()[pri:18, instance:com.dreamorbit.scripts.SearchResearcherTest@711f39f9]" name="searchResearcherValid" duration-ms="60599" started-at="2020-02-10T15:47:08 IST" finished-at="2020-02-10T15:48:09 IST">
           <reporter-output>
             <line>
-              <![CDATA[TotalParticipant Navigation Check testcase is passed]]>
+              <![CDATA[Researcher exact Search test case with existing data is passed]]>
             </line>
             <line>
-              <![CDATA[TotalResearcher Navigation Check testcase is passed]]>
+              <![CDATA[Researcher partial Search test case with existing data is passed]]>
+            </line>
+            <line>
+              <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
+            </line>
+            <line>
+              <![CDATA[Researcher Search testcase with  non existing data is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- totalParticipantNavigationCheck -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck@23faf8f2]" name="closeApp" is-config="true" duration-ms="650" started-at="2020-02-03T16:57:51 IST" finished-at="2020-02-03T16:57:52 IST">
+        </test-method> <!-- searchResearcherValid -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.SearchResearcherTest@711f39f9]" name="closeApp" is-config="true" duration-ms="640" started-at="2020-02-10T15:48:09 IST" finished-at="2020-02-10T15:48:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.LabelOptionsNavigationFlowCheck -->
-      <class name="com.dreamorbit.scripts.VerifySaveKeyForSession">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.VerifySaveKeyForSession@711f39f9]" name="launchAPP" is-config="true" duration-ms="8173" started-at="2020-02-03T16:51:21 IST" finished-at="2020-02-03T16:51:29 IST">
+      </class> <!-- com.dreamorbit.scripts.SearchResearcherTest -->
+      <class name="com.dreamorbit.scripts.InvalidLoginTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.InvalidLoginTest@7d0587f1]" name="launchAPP" is-config="true" duration-ms="11447" started-at="2020-02-10T15:35:49 IST" finished-at="2020-02-10T15:36:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="testSaveSessionKey()[pri:28, instance:com.dreamorbit.scripts.VerifySaveKeyForSession@711f39f9]" name="testSaveSessionKey" duration-ms="43284" started-at="2020-02-03T16:51:29 IST" finished-at="2020-02-03T16:52:12 IST">
+        <test-method status="PASS" signature="testInvalidlogin()[pri:2, instance:com.dreamorbit.scripts.InvalidLoginTest@7d0587f1]" name="testInvalidlogin" duration-ms="21116" started-at="2020-02-10T15:36:01 IST" finished-at="2020-02-10T15:36:22 IST">
           <reporter-output>
             <line>
-              <![CDATA[Session is saving for File downloads - testcase passed]]>
+              <![CDATA[RowCount=3]]>
             </line>
             <line>
-              <![CDATA[Session is saving for personal info screen- testcase passed]]>
+              <![CDATA[Invalid login verification testcase is passed]]>
             </line>
             <line>
-              <![CDATA[Researcher added successfully.]]>
+              <![CDATA[Invalid login verification testcase is passed]]>
             </line>
             <line>
-              <![CDATA[Session is saving for Adding researcher - Save Session Key testcase is passed]]>
+              <![CDATA[Invalid login verification testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testSaveSessionKey -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.VerifySaveKeyForSession@711f39f9]" name="closeApp" is-config="true" duration-ms="622" started-at="2020-02-03T16:52:12 IST" finished-at="2020-02-03T16:52:13 IST">
+        </test-method> <!-- testInvalidlogin -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.InvalidLoginTest@7d0587f1]" name="closeApp" is-config="true" duration-ms="1128" started-at="2020-02-10T15:36:22 IST" finished-at="2020-02-10T15:36:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.VerifySaveKeyForSession -->
-      <class name="com.dreamorbit.scripts.TestAuditRessearcher">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestAuditRessearcher@d44fc21]" name="launchAPP" is-config="true" duration-ms="7941" started-at="2020-02-03T16:56:31 IST" finished-at="2020-02-03T16:56:39 IST">
+      </class> <!-- com.dreamorbit.scripts.InvalidLoginTest -->
+      <class name="com.dreamorbit.scripts.AuditResearcherTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AuditResearcherTest@67205a84]" name="launchAPP" is-config="true" duration-ms="11517" started-at="2020-02-10T15:34:49 IST" finished-at="2020-02-10T15:35:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="auditRessearcherVerification()[pri:26, instance:com.dreamorbit.scripts.TestAuditRessearcher@d44fc21]" name="auditRessearcherVerification" duration-ms="43980" started-at="2020-02-03T16:56:39 IST" finished-at="2020-02-03T16:57:23 IST">
+        <test-method status="PASS" signature="auditRessearcherVerification()[pri:26, instance:com.dreamorbit.scripts.AuditResearcherTest@67205a84]" name="auditRessearcherVerification" duration-ms="47794" started-at="2020-02-10T15:35:00 IST" finished-at="2020-02-10T15:35:48 IST">
           <reporter-output>
             <line>
               <![CDATA[9 Uploads]]>
@@ -531,86 +582,52 @@
             </line>
           </reporter-output>
         </test-method> <!-- auditRessearcherVerification -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestAuditRessearcher@d44fc21]" name="closeApp" is-config="true" duration-ms="607" started-at="2020-02-03T16:57:23 IST" finished-at="2020-02-03T16:57:23 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AuditResearcherTest@67205a84]" name="closeApp" is-config="true" duration-ms="787" started-at="2020-02-10T15:35:48 IST" finished-at="2020-02-10T15:35:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestAuditRessearcher -->
-      <class name="com.dreamorbit.scripts.TestInvalidLogin">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestInvalidLogin@26aa12dd]" name="launchAPP" is-config="true" duration-ms="9074" started-at="2020-02-03T16:49:28 IST" finished-at="2020-02-03T16:49:37 IST">
+      </class> <!-- com.dreamorbit.scripts.AuditResearcherTest -->
+      <class name="com.dreamorbit.scripts.AddResearcherTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AddResearcherTest@5e853265]" name="launchAPP" is-config="true" duration-ms="22119" started-at="2020-02-10T15:32:57 IST" finished-at="2020-02-10T15:33:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="testInvalidlogin()[pri:2, instance:com.dreamorbit.scripts.TestInvalidLogin@26aa12dd]" name="testInvalidlogin" duration-ms="20368" started-at="2020-02-03T16:49:37 IST" finished-at="2020-02-03T16:49:57 IST">
+        <test-method status="PASS" signature="AddResearcherCheckValid()[pri:12, instance:com.dreamorbit.scripts.AddResearcherTest@5e853265]" name="AddResearcherCheckValid" duration-ms="45548" started-at="2020-02-10T15:33:19 IST" finished-at="2020-02-10T15:34:05 IST">
           <reporter-output>
             <line>
-              <![CDATA[RowCount=3]]>
+              <![CDATA[Researcher is getting added successfully- Test case is passed]]>
             </line>
             <line>
-              <![CDATA[Invalid login verification testcase is passed]]>
-            </line>
-            <line>
-              <![CDATA[Invalid login verification testcase is passed]]>
-            </line>
-            <line>
-              <![CDATA[Invalid login verification testcase is passed]]>
+              <![CDATA[Copy reseracher sKey to clip board -Test case is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testInvalidlogin -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestInvalidLogin@26aa12dd]" name="closeApp" is-config="true" duration-ms="612" started-at="2020-02-03T16:49:57 IST" finished-at="2020-02-03T16:49:58 IST">
+        </test-method> <!-- AddResearcherCheckValid -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AddResearcherTest@5e853265]" name="closeApp" is-config="true" duration-ms="1229" started-at="2020-02-10T15:34:05 IST" finished-at="2020-02-10T15:34:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestInvalidLogin -->
-      <class name="com.dreamorbit.scripts.LogoutVerification">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.LogoutVerification@5e853265]" name="launchAPP" is-config="true" duration-ms="11685" started-at="2020-02-03T16:41:36 IST" finished-at="2020-02-03T16:41:48 IST">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AddResearcherTest@5e853265]" name="launchAPP" is-config="true" duration-ms="11987" started-at="2020-02-10T15:34:06 IST" finished-at="2020-02-10T15:34:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="verifyLogout()[pri:15, instance:com.dreamorbit.scripts.LogoutVerification@5e853265]" name="verifyLogout" duration-ms="32400" started-at="2020-02-03T16:41:48 IST" finished-at="2020-02-03T16:42:20 IST">
+        <test-method status="PASS" signature="AddResearcherCheckInValid()[pri:13, instance:com.dreamorbit.scripts.AddResearcherTest@5e853265]" name="AddResearcherCheckInValid" duration-ms="29383" started-at="2020-02-10T15:34:18 IST" finished-at="2020-02-10T15:34:48 IST">
           <reporter-output>
             <line>
-              <![CDATA[Logout Cancel button functionality is passed]]>
-            </line>
-            <line>
-              <![CDATA[Logout success testcase is passed]]>
+              <![CDATA[Trying to add researcher with invalid email iD's - Testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.LogoutVerification@5e853265]" name="closeApp" is-config="true" duration-ms="615" started-at="2020-02-03T16:42:20 IST" finished-at="2020-02-03T16:42:21 IST">
+        </test-method> <!-- AddResearcherCheckInValid -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AddResearcherTest@5e853265]" name="closeApp" is-config="true" duration-ms="1407" started-at="2020-02-10T15:34:48 IST" finished-at="2020-02-10T15:34:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.LogoutVerification -->
-      <class name="com.dreamorbit.scripts.TestShowHidePassword">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestShowHidePassword@5d76b067]" name="launchAPP" is-config="true" duration-ms="8077" started-at="2020-02-03T16:45:56 IST" finished-at="2020-02-03T16:46:04 IST">
+      </class> <!-- com.dreamorbit.scripts.AddResearcherTest -->
+      <class name="com.dreamorbit.scripts.VerifyTokenToggleBTNTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.VerifyTokenToggleBTNTest@2a17b7b6]" name="launchAPP" is-config="true" duration-ms="7950" started-at="2020-02-10T15:39:06 IST" finished-at="2020-02-10T15:39:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="testShowHidePWD()[pri:22, instance:com.dreamorbit.scripts.TestShowHidePassword@5d76b067]" name="testShowHidePWD" duration-ms="557" started-at="2020-02-03T16:46:04 IST" finished-at="2020-02-03T16:46:05 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Password is hidden on the first time input- testcase is passed]]>
-            </line>
-            <line>
-              <![CDATA[Show Password testcase is passed]]>
-            </line>
-            <line>
-              <![CDATA[Hide Password testcase is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testShowHidePWD -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestShowHidePassword@5d76b067]" name="closeApp" is-config="true" duration-ms="618" started-at="2020-02-03T16:46:05 IST" finished-at="2020-02-03T16:46:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestShowHidePassword -->
-      <class name="com.dreamorbit.scripts.VerifyTokenToggleBTN">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.VerifyTokenToggleBTN@7d0587f1]" name="launchAPP" is-config="true" duration-ms="9948" started-at="2020-02-03T16:44:44 IST" finished-at="2020-02-03T16:44:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="VerifyTokenCheck()[pri:13, instance:com.dreamorbit.scripts.VerifyTokenToggleBTN@7d0587f1]" name="VerifyTokenCheck" duration-ms="21477" started-at="2020-02-03T16:44:54 IST" finished-at="2020-02-03T16:45:15 IST">
+        <test-method status="PASS" signature="VerifyTokenCheck()[pri:13, instance:com.dreamorbit.scripts.VerifyTokenToggleBTNTest@2a17b7b6]" name="VerifyTokenCheck" duration-ms="22097" started-at="2020-02-10T15:39:14 IST" finished-at="2020-02-10T15:39:36 IST">
           <reporter-output>
             <line>
               <![CDATA[Verify Token updated successfully toast is displaying-test case passed]]>
@@ -626,40 +643,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyTokenCheck -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.VerifyTokenToggleBTN@7d0587f1]" name="closeApp" is-config="true" duration-ms="642" started-at="2020-02-03T16:45:15 IST" finished-at="2020-02-03T16:45:16 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.VerifyTokenToggleBTNTest@2a17b7b6]" name="closeApp" is-config="true" duration-ms="662" started-at="2020-02-10T15:39:36 IST" finished-at="2020-02-10T15:39:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.VerifyTokenToggleBTN -->
-      <class name="com.dreamorbit.scripts.NavigationCheckUploadsLink">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.NavigationCheckUploadsLink@67205a84]" name="launchAPP" is-config="true" duration-ms="8491" started-at="2020-02-03T16:44:18 IST" finished-at="2020-02-03T16:44:26 IST">
+      </class> <!-- com.dreamorbit.scripts.VerifyTokenToggleBTNTest -->
+      <class name="com.dreamorbit.scripts.NavigationOnDrawerOptionsTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.NavigationOnDrawerOptionsTest@1e6d1014]" name="launchAPP" is-config="true" duration-ms="8655" started-at="2020-02-10T15:40:03 IST" finished-at="2020-02-10T15:40:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="jsonDownloadCheck()[pri:20, instance:com.dreamorbit.scripts.NavigationCheckUploadsLink@67205a84]" name="jsonDownloadCheck" duration-ms="16926" started-at="2020-02-03T16:44:26 IST" finished-at="2020-02-03T16:44:43 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[9 Uploads]]>
-            </line>
-            <line>
-              <![CDATA[true]]>
-            </line>
-            <line>
-              <![CDATA[Navigation flow on 9 Uploads link click testcase is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- jsonDownloadCheck -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.NavigationCheckUploadsLink@67205a84]" name="closeApp" is-config="true" duration-ms="888" started-at="2020-02-03T16:44:43 IST" finished-at="2020-02-03T16:44:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.NavigationCheckUploadsLink -->
-      <class name="com.dreamorbit.scripts.NavigationCheckOnDrawerOptions">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.NavigationCheckOnDrawerOptions@76707e36]" name="launchAPP" is-config="true" duration-ms="10586" started-at="2020-02-03T16:40:43 IST" finished-at="2020-02-03T16:40:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="navigationFlowCheck()[pri:11, instance:com.dreamorbit.scripts.NavigationCheckOnDrawerOptions@76707e36]" name="navigationFlowCheck" duration-ms="41951" started-at="2020-02-03T16:40:53 IST" finished-at="2020-02-03T16:41:35 IST">
+        <test-method status="PASS" signature="navigationFlowCheck()[pri:11, instance:com.dreamorbit.scripts.NavigationOnDrawerOptionsTest@1e6d1014]" name="navigationFlowCheck" duration-ms="36506" started-at="2020-02-10T15:40:11 IST" finished-at="2020-02-10T15:40:48 IST">
           <reporter-output>
             <line>
               <![CDATA[Researcher page navigation testcase is passed]]>
@@ -675,154 +669,140 @@
             </line>
           </reporter-output>
         </test-method> <!-- navigationFlowCheck -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.NavigationCheckOnDrawerOptions@76707e36]" name="closeApp" is-config="true" duration-ms="634" started-at="2020-02-03T16:41:35 IST" finished-at="2020-02-03T16:41:36 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.NavigationOnDrawerOptionsTest@1e6d1014]" name="closeApp" is-config="true" duration-ms="623" started-at="2020-02-10T15:40:48 IST" finished-at="2020-02-10T15:40:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.NavigationCheckOnDrawerOptions -->
-      <class name="com.dreamorbit.scripts.AddResearcherCheck">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@7f13d6e]" name="launchAPP" is-config="true" duration-ms="8759" started-at="2020-02-03T16:54:39 IST" finished-at="2020-02-03T16:54:48 IST">
+      </class> <!-- com.dreamorbit.scripts.NavigationOnDrawerOptionsTest -->
+      <class name="com.dreamorbit.scripts.UploadsLinkNavigationTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.UploadsLinkNavigationTest@4f063c0a]" name="launchAPP" is-config="true" duration-ms="8632" started-at="2020-02-10T15:39:37 IST" finished-at="2020-02-10T15:39:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="AddResearcherCheckValid()[pri:12, instance:com.dreamorbit.scripts.AddResearcherCheck@7f13d6e]" name="AddResearcherCheckValid" duration-ms="20431" started-at="2020-02-03T16:54:48 IST" finished-at="2020-02-03T16:55:08 IST">
+        <test-method status="PASS" signature="jsonDownloadCheck()[pri:20, instance:com.dreamorbit.scripts.UploadsLinkNavigationTest@4f063c0a]" name="jsonDownloadCheck" duration-ms="16647" started-at="2020-02-10T15:39:45 IST" finished-at="2020-02-10T15:40:02 IST">
           <reporter-output>
             <line>
-              <![CDATA[Researcher is getting added successfully- Test case is passed]]>
+              <![CDATA[9 Uploads]]>
             </line>
             <line>
-              <![CDATA[Copy reseracher sKey to clip board -Test case is passed]]>
+              <![CDATA[true]]>
+            </line>
+            <line>
+              <![CDATA[Navigation flow on 9 Uploads link click testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddResearcherCheckValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@7f13d6e]" name="closeApp" is-config="true" duration-ms="618" started-at="2020-02-03T16:55:08 IST" finished-at="2020-02-03T16:55:09 IST">
+        </test-method> <!-- jsonDownloadCheck -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.UploadsLinkNavigationTest@4f063c0a]" name="closeApp" is-config="true" duration-ms="667" started-at="2020-02-10T15:40:02 IST" finished-at="2020-02-10T15:40:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@7f13d6e]" name="launchAPP" is-config="true" duration-ms="7945" started-at="2020-02-03T16:55:09 IST" finished-at="2020-02-03T16:55:17 IST">
+      </class> <!-- com.dreamorbit.scripts.UploadsLinkNavigationTest -->
+      <class name="com.dreamorbit.scripts.UserRatingTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.UserRatingTest@76707e36]" name="launchAPP" is-config="true" duration-ms="7393" started-at="2020-02-10T15:40:48 IST" finished-at="2020-02-10T15:40:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="AddResearcherCheckInValid()[pri:13, instance:com.dreamorbit.scripts.AddResearcherCheck@7f13d6e]" name="AddResearcherCheckInValid" duration-ms="28127" started-at="2020-02-03T16:55:17 IST" finished-at="2020-02-03T16:55:45 IST">
+        <test-method status="PASS" signature="ratingAvgCheck()[pri:25, instance:com.dreamorbit.scripts.UserRatingTest@76707e36]" name="ratingAvgCheck" duration-ms="73150" started-at="2020-02-10T15:40:56 IST" finished-at="2020-02-10T15:42:09 IST">
           <reporter-output>
             <line>
-              <![CDATA[Trying to add researcher with invalid email iD's - Testcase is passed]]>
+              <![CDATA[Calculated Average rating and displayed average ratings are matching- testcase passed]]>
+            </line>
+            <line>
+              <![CDATA[Actual displayed number of users and expected number of users are matching- testcase passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddResearcherCheckInValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.AddResearcherCheck@7f13d6e]" name="closeApp" is-config="true" duration-ms="619" started-at="2020-02-03T16:55:45 IST" finished-at="2020-02-03T16:55:46 IST">
+        </test-method> <!-- ratingAvgCheck -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.UserRatingTest@76707e36]" name="closeApp" is-config="true" duration-ms="631" started-at="2020-02-10T15:42:09 IST" finished-at="2020-02-10T15:42:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.AddResearcherCheck -->
-      <class name="com.dreamorbit.scripts.JsonDownloadInvalidSkey">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@2a17b7b6]" name="launchAPP" is-config="true" duration-ms="8216" started-at="2020-02-03T16:46:05 IST" finished-at="2020-02-03T16:46:14 IST">
+      </class> <!-- com.dreamorbit.scripts.UserRatingTest -->
+      <class name="com.dreamorbit.scripts.ForgotPasswordTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="launchAPP" is-config="true" duration-ms="10134" started-at="2020-02-10T15:36:23 IST" finished-at="2020-02-10T15:36:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="jsonDownloadInvalidSkey()[pri:5, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@2a17b7b6]" name="jsonDownloadInvalidSkey" duration-ms="26073" started-at="2020-02-03T16:46:14 IST" finished-at="2020-02-03T16:46:40 IST">
+        <test-method status="PASS" signature="ForgotPWDNavigationFlowCheck()[pri:7, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="ForgotPWDNavigationFlowCheck" duration-ms="371" started-at="2020-02-10T15:36:33 IST" finished-at="2020-02-10T15:36:33 IST">
           <reporter-output>
             <line>
-              <![CDATA[Json Download testcase with invalid symmetric key is passed]]>
-            </line>
-            <line>
-              <![CDATA[Json Download testcase with invalid symmetric key is passed]]>
+              <![CDATA[Forgot password button NavigationFlowCheck- Testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- jsonDownloadInvalidSkey -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@2a17b7b6]" name="closeApp" is-config="true" duration-ms="662" started-at="2020-02-03T16:46:40 IST" finished-at="2020-02-03T16:46:40 IST">
+        </test-method> <!-- ForgotPWDNavigationFlowCheck -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="closeApp" is-config="true" duration-ms="742" started-at="2020-02-10T15:36:33 IST" finished-at="2020-02-10T15:36:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@2a17b7b6]" name="launchAPP" is-config="true" duration-ms="7733" started-at="2020-02-03T16:46:40 IST" finished-at="2020-02-03T16:46:48 IST">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="launchAPP" is-config="true" duration-ms="11090" started-at="2020-02-10T15:36:34 IST" finished-at="2020-02-10T15:36:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="jsonDownloadIncorrectSkey()[pri:6, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@2a17b7b6]" name="jsonDownloadIncorrectSkey" duration-ms="28642" started-at="2020-02-03T16:46:48 IST" finished-at="2020-02-03T16:47:17 IST">
+        <test-method status="PASS" signature="forgotPasswordValid()[pri:8, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="forgotPasswordValid" duration-ms="21732" started-at="2020-02-10T15:36:45 IST" finished-at="2020-02-10T15:37:07 IST">
           <reporter-output>
             <line>
-              <![CDATA[invalidkey input counts =3]]>
+              <![CDATA[Forgot password feature with valid data is working as expected- Testcase is passed]]>
             </line>
             <line>
-              <![CDATA[Invalid key]]>
-            </line>
-            <line>
-              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
-            </line>
-            <line>
-              <![CDATA[Invalid key]]>
-            </line>
-            <line>
-              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
-            </line>
-            <line>
-              <![CDATA[Invalid key]]>
-            </line>
-            <line>
-              <![CDATA[Json Download testcase with incorrect symmetric key is passed]]>
+              <![CDATA[Back navigation from Reset Password screen is working as expected - Testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- jsonDownloadIncorrectSkey -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.JsonDownloadInvalidSkey@2a17b7b6]" name="closeApp" is-config="true" duration-ms="640" started-at="2020-02-03T16:47:17 IST" finished-at="2020-02-03T16:47:17 IST">
+        </test-method> <!-- forgotPasswordValid -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="closeApp" is-config="true" duration-ms="1451" started-at="2020-02-10T15:37:07 IST" finished-at="2020-02-10T15:37:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.JsonDownloadInvalidSkey -->
-      <class name="com.dreamorbit.scripts.DecryptParticipantsVerification">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.DecryptParticipantsVerification@614ddd49]" name="launchAPP" is-config="true" duration-ms="9220" started-at="2020-02-03T16:42:21 IST" finished-at="2020-02-03T16:42:30 IST">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="launchAPP" is-config="true" duration-ms="12427" started-at="2020-02-10T15:37:08 IST" finished-at="2020-02-10T15:37:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="testDecryptParticipants()[pri:19, instance:com.dreamorbit.scripts.DecryptParticipantsVerification@614ddd49]" name="testDecryptParticipants" duration-ms="10609" started-at="2020-02-03T16:42:30 IST" finished-at="2020-02-03T16:42:40 IST">
+        <test-method status="PASS" signature="forgotPasswordInValid()[pri:9, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="forgotPasswordInValid" duration-ms="20921" started-at="2020-02-10T15:37:21 IST" finished-at="2020-02-10T15:37:42 IST">
           <reporter-output>
             <line>
-              <![CDATA[Participants Link Navigation under Actions - Testcase is  passed]]>
-            </line>
-            <line>
-              <![CDATA[Decrypt Participants in list with valid symmetric key -Testcase is Passed]]>
-            </line>
-            <line>
-              <![CDATA[Decrypt Participants button is Disabled after the decryption is done, Testcase is Passed]]>
+              <![CDATA[Forgot password feature with Invalid inputs - Testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testDecryptParticipants -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.DecryptParticipantsVerification@614ddd49]" name="closeApp" is-config="true" duration-ms="618" started-at="2020-02-03T16:42:40 IST" finished-at="2020-02-03T16:42:41 IST">
+        </test-method> <!-- forgotPasswordInValid -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="closeApp" is-config="true" duration-ms="844" started-at="2020-02-10T15:37:42 IST" finished-at="2020-02-10T15:37:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.DecryptParticipantsVerification -->
-      <class name="com.dreamorbit.scripts.TestSearchResearcher">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestSearchResearcher@1f554b06]" name="launchAPP" is-config="true" duration-ms="9978" started-at="2020-02-03T16:42:41 IST" finished-at="2020-02-03T16:42:51 IST">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="launchAPP" is-config="true" duration-ms="10573" started-at="2020-02-10T15:37:42 IST" finished-at="2020-02-10T15:37:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="searchResearcherValid()[pri:18, instance:com.dreamorbit.scripts.TestSearchResearcher@1f554b06]" name="searchResearcherValid" duration-ms="60976" started-at="2020-02-03T16:42:51 IST" finished-at="2020-02-03T16:43:52 IST">
+        <test-method status="PASS" signature="fPChkWithAttemptlimitExceeded()[pri:10, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="fPChkWithAttemptlimitExceeded" duration-ms="59784" started-at="2020-02-10T15:37:53 IST" finished-at="2020-02-10T15:38:53 IST">
           <reporter-output>
             <line>
-              <![CDATA[Researcher exact Search test case with existing data is passed]]>
-            </line>
-            <line>
-              <![CDATA[Researcher partial Search test case with existing data is passed]]>
-            </line>
-            <line>
-              <![CDATA[Clear button functionality in researcher search- testcase is passed ]]>
-            </line>
-            <line>
-              <![CDATA[Researcher Search testcase with  non existing data is passed]]>
+              <![CDATA[Forgot password feature with invalid Email attempt limit exceeds 5  - Testcase is passed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- searchResearcherValid -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestSearchResearcher@1f554b06]" name="closeApp" is-config="true" duration-ms="623" started-at="2020-02-03T16:43:52 IST" finished-at="2020-02-03T16:43:53 IST">
+        </test-method> <!-- fPChkWithAttemptlimitExceeded -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="closeApp" is-config="true" duration-ms="619" started-at="2020-02-10T15:38:53 IST" finished-at="2020-02-10T15:38:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestSearchResearcher -->
-      <class name="com.dreamorbit.scripts.TestNotification">
-        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.TestNotification@131276c2]" name="launchAPP" is-config="true" duration-ms="8250" started-at="2020-02-03T16:47:55 IST" finished-at="2020-02-03T16:48:03 IST">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="launchAPP" is-config="true" duration-ms="10527" started-at="2020-02-10T15:38:53 IST" finished-at="2020-02-10T15:39:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAPP -->
-        <test-method status="PASS" signature="setNotification()[pri:23, instance:com.dreamorbit.scripts.TestNotification@131276c2]" name="setNotification" duration-ms="83905" started-at="2020-02-03T16:48:03 IST" finished-at="2020-02-03T16:49:27 IST">
+        <test-method status="PASS" signature="forgotPwdTologinNavigationChk()[pri:11, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="forgotPwdTologinNavigationChk" duration-ms="1333" started-at="2020-02-10T15:39:04 IST" finished-at="2020-02-10T15:39:05 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Login link in forgot password screen is working as expected-Testcase is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- forgotPwdTologinNavigationChk -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.ForgotPasswordTest@5d76b067]" name="closeApp" is-config="true" duration-ms="716" started-at="2020-02-10T15:39:05 IST" finished-at="2020-02-10T15:39:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.dreamorbit.scripts.ForgotPasswordTest -->
+      <class name="com.dreamorbit.scripts.NotificationTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.NotificationTest@1c3a4799]" name="launchAPP" is-config="true" duration-ms="7462" started-at="2020-02-10T15:43:50 IST" finished-at="2020-02-10T15:43:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="setNotification()[pri:23, instance:com.dreamorbit.scripts.NotificationTest@1c3a4799]" name="setNotification" duration-ms="83384" started-at="2020-02-10T15:43:58 IST" finished-at="2020-02-10T15:45:21 IST">
           <reporter-output>
             <line>
               <![CDATA[Cancel button functionality in the Set Notification screen is working as expected- TestCase Passed]]>
@@ -841,11 +821,31 @@
             </line>
           </reporter-output>
         </test-method> <!-- setNotification -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.TestNotification@131276c2]" name="closeApp" is-config="true" duration-ms="625" started-at="2020-02-03T16:49:27 IST" finished-at="2020-02-03T16:49:28 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.NotificationTest@1c3a4799]" name="closeApp" is-config="true" duration-ms="634" started-at="2020-02-10T15:45:21 IST" finished-at="2020-02-10T15:45:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.dreamorbit.scripts.TestNotification -->
+      </class> <!-- com.dreamorbit.scripts.NotificationTest -->
+      <class name="com.dreamorbit.scripts.LogoutTest">
+        <test-method status="PASS" signature="launchAPP()[pri:0, instance:com.dreamorbit.scripts.LogoutTest@694e1548]" name="launchAPP" is-config="true" duration-ms="7930" started-at="2020-02-10T15:43:10 IST" finished-at="2020-02-10T15:43:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="verifyLogout()[pri:15, instance:com.dreamorbit.scripts.LogoutTest@694e1548]" name="verifyLogout" duration-ms="31280" started-at="2020-02-10T15:43:18 IST" finished-at="2020-02-10T15:43:50 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout Cancel button functionality is passed]]>
+            </line>
+            <line>
+              <![CDATA[Logout success testcase is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.dreamorbit.scripts.LogoutTest@694e1548]" name="closeApp" is-config="true" duration-ms="627" started-at="2020-02-10T15:43:50 IST" finished-at="2020-02-10T15:43:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.dreamorbit.scripts.LogoutTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

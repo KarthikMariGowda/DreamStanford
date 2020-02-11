@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.dreamorbit.scripts.AddResearcherTest"/>
+      <class name="com.dreamorbit.scripts.AuditResearcherTest"/>
+      <class name="com.dreamorbit.scripts.ForgotPasswordTest"/>
+      <class name="com.dreamorbit.scripts.UploadsLinkNavigationTest"/>
+      <class name="com.dreamorbit.scripts.NavigationOnDrawerOptionsTest"/>
+      <class name="com.dreamorbit.scripts.PersonalInfoDecryptTest"/>
+      <class name="com.dreamorbit.scripts.LogoutTest"/>
+      <class name="com.dreamorbit.scripts.NotificationTest"/>
+      <class name="com.dreamorbit.scripts.ResetPasswordValidTest"/>
+      <class name="com.dreamorbit.scripts.JsonDownloadValidSkeyTest"/>
+      <class name="com.dreamorbit.scripts.ValidLoginTest"/>
+      <class name="com.dreamorbit.scripts.JsonReaderTest"/>
+      <class name="com.dreamorbit.scripts.DecryptParticipantVerificationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
